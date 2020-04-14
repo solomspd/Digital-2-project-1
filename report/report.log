@@ -1,0 +1,434 @@
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2020.3.31)  14 APR 2020 08:05
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.tex"
+(/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.tex
+LaTeX2e <2019-10-01> patch level 1
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2019/04/01 v2.17c AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2855.
+LaTeX Info: Redefining \] on input line 2856.
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count100
+\float@exts=\toks19
+\float@box=\box29
+\@float@everytoks=\toks20
+\@floatcapt=\box30
+) (/usr/share/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2019/10/12{} The CircuiTikz circuit drawing package version 0.9.5
+ (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen112
+\pgfutil@tempdimb=\dimen113
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box31
+ (/usr/share/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2019/08/03 v3.1.4b (3.1.4b)
+))
+Package: pgf 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+ (/usr/share/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+) (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen116
+\pgf@y=\dimen117
+\pgf@xa=\dimen118
+\pgf@ya=\dimen119
+\pgf@xb=\dimen120
+\pgf@yb=\dimen121
+\pgf@xc=\dimen122
+\pgf@yc=\dimen123
+\pgf@xd=\dimen124
+\pgf@yd=\dimen125
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count101
+\c@pgf@countb=\count102
+\c@pgf@countc=\count103
+\c@pgf@countd=\count104
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count105
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2019/08/03 v3.1.4b (3.1.4b)
+)
+Driver file for pgf: pgfsys-xetex.def
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2019/08/03 v3.1.4b (3.1.4b)
+)
+\pgfsys@objnum=\count106
+))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfsyssoftpath@smallbuffer@items=\count107
+\pgfsyssoftpath@bigbuffer@items=\count108
+) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen126
+\pgfmath@count=\count109
+\pgfmath@box=\box32
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count110
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@picminx=\dimen127
+\pgf@picmaxx=\dimen128
+\pgf@picminy=\dimen129
+\pgf@picmaxy=\dimen130
+\pgf@pathminx=\dimen131
+\pgf@pathmaxx=\dimen132
+\pgf@pathminy=\dimen133
+\pgf@pathmaxy=\dimen134
+\pgf@xx=\dimen135
+\pgf@xy=\dimen136
+\pgf@yx=\dimen137
+\pgf@yy=\dimen138
+\pgf@zx=\dimen139
+\pgf@zy=\dimen140
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@path@lastx=\dimen141
+\pgf@path@lasty=\dimen142
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@shorten@end@additional=\dimen143
+\pgf@shorten@start@additional=\dimen144
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfpic=\box33
+\pgf@hbox=\box34
+\pgf@layerbox@main=\box35
+\pgf@picture@serial@count=\count111
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgflinewidth=\dimen145
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@pt@x=\dimen146
+\pgf@pt@y=\dimen147
+\pgf@pt@temp=\dimen148
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfarrowsep=\dimen149
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@max=\dimen150
+\pgf@sys@shading@range@num=\count112
+\pgf@shadingcount=\count113
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfexternal@startupbox=\box36
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+))) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfnodeparttextbox=\box37
+) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@nodesepstart=\dimen151
+\pgf@nodesepend=\dimen152
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2019/08/03 v3.1.4b (3.1.4b)
+)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen153
+\pgffor@skip=\dimen154
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@plot@mark@count=\count114
+\pgfplotmarksize=\dimen155
+)
+\tikz@lastx=\dimen156
+\tikz@lasty=\dimen157
+\tikz@lastxsaved=\dimen158
+\tikz@lastysaved=\dimen159
+\tikz@lastmovetox=\dimen160
+\tikz@lastmovetoy=\dimen161
+\tikzleveldistance=\dimen162
+\tikzsiblingdistance=\dimen163
+\tikz@figbox=\box38
+\tikz@figbox@bg=\box39
+\tikz@tempbox=\box40
+\tikz@tempbox@bg=\box41
+\tikztreelevel=\count115
+\tikznumberofchildren=\count116
+\tikznumberofcurrentchild=\count117
+\tikz@fig@count=\count118
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfmatrixcurrentrow=\count119
+\pgfmatrixcurrentcolumn=\count120
+\pgf@matrix@numberofcolumns=\count121
+)
+\tikz@expandcount=\count122
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfarrowinset=\dimen164
+\pgfarrowlength=\dimen165
+\pgfarrowwidth=\dimen166
+\pgfarrowlinewidth=\dimen167
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.tex
+File: pgfmodulebending.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgftransformnonlinearflatness=\dimen168
+) (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
+File: pgflibrarycurvilinear.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@curvilinear@time@a=\dimen169
+\pgf@curvilinear@length@a=\dimen170
+\pgf@curvilinear@length@b=\dimen171
+\pgf@curvilinear@length@c=\dimen172
+\pgf@curvilinear@length@d=\dimen173
+)
+\pgf@arrows@the@rigidity=\dimen174
+)) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
+\pgf@circ@count@a=\count123
+\pgf@circ@count@b=\count124
+\pgf@circ@count@c=\count125
+\pgf@circ@res@up=\dimen175
+\pgf@circ@res@down=\dimen176
+\pgf@circ@res@zero=\dimen177
+\pgf@circ@res@left=\dimen178
+\pgf@circ@res@right=\dimen179
+\pgf@circ@res@other=\dimen180
+\pgf@circ@res@step=\dimen181
+\pgf@circ@res@temp=\dimen182
+\pgfstartlinewidth=\dimen183
+\pgf@circ@Rlen=\dimen184
+\pgf@circ@scaled@Rlen=\dimen185
+) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
+\pgf@circ@res@count=\count126
+) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex) (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex)
+
+Package circuitikz Warning: You did not specify one of the voltage directions:
+(circuitikz)                  oldvoltagedirection, nooldvoltagedirection, 
+(circuitikz)                  RPvoltages or EFvoltages 
+(circuitikz)                Default directions may have changed, 
+(circuitikz)                please check the manual.
+
+) (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+ (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks34
+\t@pgfplots@tokb=\toks35
+\t@pgfplots@tokc=\toks36
+\pgfplots@tmpa=\dimen186
+\c@pgfplots@coordindex=\count127
+\c@pgfplots@scanlineindex=\count128
+ (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count129
+) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count130
+\t@pgfplotstable@a=\toks37
+) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count131
+ (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-xetex.def (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count132
+)))) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen187
+\pgfdecoratedremainingdistance=\dimen188
+\pgfdecoratedinputsegmentcompleteddistance=\dimen189
+\pgfdecoratedinputsegmentremainingdistance=\dimen190
+\pgf@decorate@distancetomove=\dimen191
+\pgf@decorate@repeatstate=\count133
+\pgfdecorationsegmentamplitude=\dimen192
+\pgfdecorationsegmentlength=\dimen193
+)
+\tikz@lib@dec@box=\box42
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count134
+\pgfplots@xmin@reg=\dimen194
+\pgfplots@xmax@reg=\dimen195
+\pgfplots@ymin@reg=\dimen196
+\pgfplots@ymax@reg=\dimen197
+\pgfplots@zmin@reg=\dimen198
+\pgfplots@zmax@reg=\dimen199
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+))) (/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+ ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into your preamble.
+ on input line 13.
+
+[1
+
+] (/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.toc)
+\tf@toc=\write4
+\openout4 = `report.toc'.
+
+ [1]
+PGFPlots: reading {./data/complex/size1.csv}
+ [2] (/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.aux) ) 
+Here is how much of TeX's memory you used:
+ 32075 strings out of 492483
+ 892553 string characters out of 6134979
+ 1213691 words of memory out of 5000000
+ 36155 multiletter control sequences out of 15000+600000
+ 7560 words of font info for 35 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 68i,9n,103p,801b,1967s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.xdv (3 pages, 24276 bytes).

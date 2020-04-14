@@ -1,0 +1,58 @@
+\documentclass[]{article}
+
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\author{Abdelsalam ElTamawy 900170376\\Emman\\Nada}
+\date{\today}
+\title{CSCE 3304 - Digital Design 2\\Project 1\\A small standard cell library\\}
+
+\begin{document}
+	
+\begin{titlepage}
+	\maketitle
+\end{titlepage}
+
+\tableofcontents
+
+\pagebreak
+
+\section{Introduction}
+
+\section{Inverter}
+
+\section{Tri-state Inverter}
+
+\section{3 input NAND}
+
+\section{3 input NOR}
+
+\section{Complex function}
+
+\subsection{Schematic}
+
+\subsection{Stick diagram}
+
+\subsection{Layout}
+
+\subsection{Transition time}
+
+\subsection{Data collection}
+
+\subsection{Minimum cell height}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis} [ylabel=$T_{pdr}$,xlabel=$\mathrm{C}_{inv}$]
+		\addplot table [x=Cinv,y=tpdr,col sep = tab] {./data/complex/size1.csv};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{$T_{pdr}$ to $\mathrm{C}_{inv}$ under $100ns$ transition time}
+	\label{}
+\end{figure}
+
+\end{document}
