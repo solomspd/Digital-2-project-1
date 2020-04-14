@@ -1,0 +1,39 @@
+Circuit: *** SPICE deck for cell INV_S1_L1_TR100{sch} from library INV
+
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+
+tpdr=6.06468e-11 FROM 2.02505e-08 TO 2.03111e-08
+tpdf=5.31741e-11 FROM 1.00835e-08 TO 1.01367e-08
+trise=6.8029e-11 FROM 2.02798e-08 TO 2.03478e-08
+tfall=6.67236e-11 FROM 1.01053e-08 TO 1.01721e-08
+
+
+Date: Fri Apr 10 18:50:59 2020
+Total elapsed time: 0.256 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2322
+traniter = 2310
+tranpoints = 1119
+accept = 1100
+rejected = 19
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1: 164 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.2
+

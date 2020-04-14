@@ -1,0 +1,1370 @@
+# header information:
+HINV|9.07
+
+# Views:
+Vicon|ic
+Vlayout|lay
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D180.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell INV_S1;1{ic}
+CINV_S1;1{ic}||artwork|1585934854453|1585935207987|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NTriangle|art@2||1|0|6|6|RRR|
+NCircle|art@3||5|0|2|2||
+Nschematic:Bus_Pin|pin@0||-4.5|0||||
+Nschematic:Wire_Pin|pin@1||-2|0||||
+Nschematic:Bus_Pin|pin@2||6|0||||
+Nschematic:Wire_Pin|pin@3||8|0||||
+Aschematic:wire|net@0|||0|pin@1||-2|0|pin@0||-4.5|0
+Aschematic:wire|net@1|||0|pin@3||8|0|pin@2||6|0
+EIN||D5G2;|pin@0||U
+EOUT||D5G1;X1.5;|pin@2||U
+X
+
+# Cell INV_S1;1{lay}
+CINV_S1;1{lay}||mocmos|1586222066693|1586561743418||DRC_last_good_drc_area_date()G1586561748034|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1586561748034
+NMetal-1-Polysilicon-1-Con|IN|D5G1;|-14|6||||
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-N-Active-Con|contact@0||-8.5|-2.5||||
+NMetal-1-N-Active-Con|contact@1||-0.5|-2.5||||
+NMetal-1-P-Active-Con|contact@2||-0.5|16.5||4||
+NMetal-1-P-Active-Con|contact@3||-8.5|16.5||4||
+NN-Transistor|nmos@4||-4.5|-2.5|2||R||SIM_spice_model(D5G1;)SNMOS
+NPolysilicon-1-Pin|pin@0||-4.5|6||||
+NMetal-1-Pin|pin@1||6|5||||
+NMetal-1-Pin|pin@2||-0.5|5||||
+NP-Transistor|pmos@1||-4.5|16.5|6||R||SIM_spice_model(D5G1;)SPMOS
+NMetal-1-P-Well-Con|substr@0||-4.5|-11.5|14|||
+NMetal-1-N-Well-Con|well@0||-4.5|27.5|14|||
+AN-Active|net@0|||S0|nmos@4|diff-top|-8.25|-2.5|contact@0||-8.5|-2.5
+AN-Active|net@1|||S1800|nmos@4|diff-bottom|-0.75|-2.5|contact@1||-0.5|-2.5
+AP-Active|net@2|||S1800|pmos@1|diff-bottom|-0.75|17|contact@2||-0.5|17
+AP-Active|net@4|||S0|pmos@1|diff-top|-8.25|17|contact@3||-8.5|17
+AMetal-1|net@5||1|S900|well@0||-8.5|27.5|contact@3||-8.5|16.5
+AMetal-1|net@6||1|S900|contact@0||-8.5|-2.5|substr@0||-8.5|-11.5
+APolysilicon-1|net@8|||S2700|nmos@4|poly-right|-4.5|2|pin@0||-4.5|6
+APolysilicon-1|net@9|||S2700|pin@0||-4.5|6|pmos@1|poly-left|-4.5|10
+APolysilicon-1|net@10|||S1800|IN||-14|6|pin@0||-4.5|6
+AMetal-1|net@12||1|S2700|contact@1||-0.5|-2.5|pin@2||-0.5|5
+AMetal-1|net@13||1|S2700|pin@2||-0.5|5|contact@2||-0.5|16.5
+AMetal-1|net@14||1|S1800|pin@2||-0.5|5|pin@1||6|5
+EGND||D5G2;|substr@0||G
+EIN||D5G2;|IN||I
+EOUT||D5G2;|pin@1||O
+EVDD||D5G2;|well@0||P
+X
+
+# Cell INV_S1;1{sch}
+CINV_S1;1{sch}||schematic|1585934120961|1586559928274|
+IINV_S1;1{ic}|INV_S1@0||6.5|23.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-17.5|8.5|-1|-1||
+NOff-Page|conn@1||0.5|8.5|-1|-1||
+NGround|gnd@0||-8|-0.5|-1|-1||
+NTransistor|nmos@0||-10|6|||R||ATTR_length(D5G0.5;RRRX0.25;Y-2;)S2.0|ATTR_width(D5G1;RRRX1;Y-2;)S5|SIM_spice_model(D5G1;RRRY-0.5;)SNMOS
+NWire_Pin|pin@0||-11|8.5||||
+NWire_Pin|pin@1||-8|8.5||||
+NTransistor|pmos@0||-10|11.5|||YR|2|ATTR_length(D5G0.5;RRRX0.25;Y-0.5;)S2.0|ATTR_width(D5G1;RRRX1;Y-0.5;)S9|SIM_spice_model(D5G1;RRRY-0.5;)SPMOS
+NPower|pwr@0||-8|17.5|-1|-1||
+Awire|net@1|||900|nmos@0|s|-8|4|gnd@0||-8|1
+Awire|net@2|||2700|pmos@0|s|-8|13.5|pwr@0||-8|17.5
+Awire|net@3|||1800|conn@0|y|-16|8.5|pin@0||-11|8.5
+Awire|net@4|||900|pmos@0|g|-11|11.5|pin@0||-11|8.5
+Awire|net@5|||900|pin@0||-11|8.5|nmos@0|g|-11|6
+Awire|net@6|||900|pmos@0|d|-8|9.5|pin@1||-8|8.5
+Awire|net@7|||900|pin@1||-8|8.5|nmos@0|d|-8|8
+Awire|net@8|||1800|pin@1||-8|8.5|conn@1|a|-1|8.5
+EIN||D5G2;|conn@0|y|U
+EOUT||D5G2;|conn@1|y|U
+X
+
+# Cell INV_S1_L1_TR0;1{lay}
+CINV_S1_L1_TR0;1{lay}||mocmos|1586562181994|1586569267123|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L1_TR100;1{lay}
+CINV_S1_L1_TR100;1{lay}||mocmos|1586562181994|1586569189265|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L1_TR400;1{lay}
+CINV_S1_L1_TR400;1{lay}||mocmos|1586562181994|1586569673418|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L1_TR800;1{lay}
+CINV_S1_L1_TR800;1{lay}||mocmos|1586562181994|1586570078498|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L2_TR0;1{lay}
+CINV_S1_L2_TR0;1{lay}||mocmos|1586562181994|1586568999144|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L2_TR100;1{lay}
+CINV_S1_L2_TR100;1{lay}||mocmos|1586562181994|1586569096550|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L2_TR400;1{lay}
+CINV_S1_L2_TR400;1{lay}||mocmos|1586562181994|1586569741319|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L2_TR800;1{lay}
+CINV_S1_L2_TR800;1{lay}||mocmos|1586562181994|1586570153472|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L4_TR0;1{lay}
+CINV_S1_L4_TR0;1{lay}||mocmos|1586562181994|1586569364534|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L4_TR100;1{lay}
+CINV_S1_L4_TR100;1{lay}||mocmos|1586562181994|1586569449694|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L4_TR400;1{lay}
+CINV_S1_L4_TR400;1{lay}||mocmos|1586562181994|1586569883662|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L4_TR800;1{lay}
+CINV_S1_L4_TR800;1{lay}||mocmos|1586562181994|1586570221044|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L8_TR0;1{lay}
+CINV_S1_L8_TR0;1{lay}||mocmos|1586562181994|1586569494594|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L8_TR100;1{lay}
+CINV_S1_L8_TR100;1{lay}||mocmos|1586562181994|1586569536002|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L8_TR400;1{lay}
+CINV_S1_L8_TR400;1{lay}||mocmos|1586562181994|1586569946502|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_L8_TR800;1{lay}
+CINV_S1_L8_TR800;1{lay}||mocmos|1586562181994|1586570290960|
+IINV_S1;1{lay}|INV_S1@0||-9.5|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-51|17||||
+NMetal-1-Pin|pin@1||-46|-22||||
+NMetal-1-Pin|pin@2||-47.5|-4.5||||
+NMetal-1-Pin|pin@3||15|-5.5||||
+Ngeneric:Invisible-Pin|pin@4||19.5|8|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S1@0|GND|-14|-22|pin@1||-46|-22
+AMetal-1|IN|D5G1;|1|S0|INV_S1@0|IN|-23.5|-4.5|pin@2||-47.5|-4.5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S1@0|OUT|-3.5|-5.5|pin@3||15|-5.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S1@0|VDD|-14|17|pin@0||-51|17
+X
+
+# Cell INV_S1_sim;1{sch}
+CINV_S1_sim;1{sch}||schematic|1585935237351|1586561542448|
+IINV_S1;1{ic}|INV_S1@0||-1|8|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NWire_Pin|pin@0||-19|8||||
+NWire_Pin|pin@1||29|8||||
+Ngeneric:Invisible-Pin|pin@2||4|-1|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 100n,cload OUT 0 250fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+Awire|IN|D5G1;||0|INV_S1@0|IN|-5.5|8|pin@0||-19|8
+Awire|OUT|D5G1;||1800|INV_S1@0|OUT|5|8|pin@1||29|8
+X
+
+# Cell INV_S2;1{ic}
+CINV_S2;1{ic}||artwork|1585936690468|1585936834355|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NTriangle|art@2||-9|2|6|6|RRR|
+NCircle|art@3||-5|2|2|2||
+Nschematic:Bus_Pin|pin@0||-15|2||||
+Nschematic:Wire_Pin|pin@1||-12|2||||
+Nschematic:Bus_Pin|pin@2||-4|2||||
+Nschematic:Wire_Pin|pin@3||-2|2||||
+Aschematic:wire|net@0|||0|pin@1||-12|2|pin@0||-15|2
+Aschematic:wire|net@1|||0|pin@3||-2|2|pin@2||-4|2
+EIN||D5G1;X1;|pin@0||U
+EOUT||D5G1;X1;|pin@2||U
+X
+
+# Cell INV_S2;2{lay}
+CINV_S2;2{lay}||mocmos|1586222066693|1586572270994||DRC_last_good_drc_area_date()G1586572278043|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1586572278043
+NMetal-1-Polysilicon-1-Con|IN|D5G1;|-14|6||||
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-N-Active-Con|contact@0||-8.5|-4.5||5||
+NMetal-1-N-Active-Con|contact@1||-0.5|-4.5||5||
+NMetal-1-P-Active-Con|contact@2||-0.5|21.5||13||
+NMetal-1-P-Active-Con|contact@3||-8.5|21.5||13||
+NN-Transistor|nmos@4||-4.5|-4.5|7||R||SIM_spice_model(D5G1;)SNMOS
+NPolysilicon-1-Pin|pin@0||-4.5|6||||
+NMetal-1-Pin|pin@1||6|8||||
+NMetal-1-Pin|pin@2||-0.5|8||||
+NP-Transistor|pmos@1||-4.5|21.5|15||R||SIM_spice_model(D5G1;)SPMOS
+NMetal-1-P-Well-Con|substr@0||-4.5|-16|14|||
+NMetal-1-N-Well-Con|well@0||-4.5|37|14|||
+AN-Active|net@0|||S0|nmos@4|diff-top|-8.25|-4.5|contact@0||-8.5|-4.5
+AN-Active|net@1|||S1800|nmos@4|diff-bottom|-0.75|-4.5|contact@1||-0.5|-4.5
+AP-Active|net@2|||S1800|pmos@1|diff-bottom|-0.75|22|contact@2||-0.5|22
+AP-Active|net@4|||S0|pmos@1|diff-top|-8.25|22|contact@3||-8.5|22
+AMetal-1|net@5||1|S900|well@0||-8.5|37.5|contact@3||-8.5|21.5
+AMetal-1|net@6||1|S900|contact@0||-8.5|-4.5|substr@0||-8.5|-16.5
+APolysilicon-1|net@8|||S2700|nmos@4|poly-right|-4.5|2.5|pin@0||-4.5|6
+APolysilicon-1|net@9|||S2700|pin@0||-4.5|6|pmos@1|poly-left|-4.5|10.5
+APolysilicon-1|net@10|||S1800|IN||-14|6|pin@0||-4.5|6
+AMetal-1|net@12||1|S2700|contact@1||-0.5|-4.5|pin@2||-0.5|8
+AMetal-1|net@13||1|S2700|pin@2||-0.5|8|contact@2||-0.5|21.5
+AMetal-1|net@14||1|S1800|pin@2||-0.5|8|pin@1||6|8
+EGND||D5G2;|substr@0||G
+EIN||D5G2;|IN||I
+EOUT||D5G2;|pin@1||O
+EVDD||D5G2;|well@0||P
+X
+
+# Cell INV_S2;1{lay}
+CINV_S2;1{lay}||mocmos|1586222066693|1586561743418||DRC_last_good_drc_area_date()G1586561748034|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1586561748034
+NMetal-1-Polysilicon-1-Con|IN|D5G1;|-14|6||||
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-N-Active-Con|contact@0||-8.5|-2.5||||
+NMetal-1-N-Active-Con|contact@1||-0.5|-2.5||||
+NMetal-1-P-Active-Con|contact@2||-0.5|16.5||4||
+NMetal-1-P-Active-Con|contact@3||-8.5|16.5||4||
+NN-Transistor|nmos@4||-4.5|-2.5|2||R||SIM_spice_model(D5G1;)SNMOS
+NPolysilicon-1-Pin|pin@0||-4.5|6||||
+NMetal-1-Pin|pin@1||6|5||||
+NMetal-1-Pin|pin@2||-0.5|5||||
+NP-Transistor|pmos@1||-4.5|16.5|6||R||SIM_spice_model(D5G1;)SPMOS
+NMetal-1-P-Well-Con|substr@0||-4.5|-11.5|14|||
+NMetal-1-N-Well-Con|well@0||-4.5|27.5|14|||
+AN-Active|net@0|||S0|nmos@4|diff-top|-8.25|-2.5|contact@0||-8.5|-2.5
+AN-Active|net@1|||S1800|nmos@4|diff-bottom|-0.75|-2.5|contact@1||-0.5|-2.5
+AP-Active|net@2|||S1800|pmos@1|diff-bottom|-0.75|17|contact@2||-0.5|17
+AP-Active|net@4|||S0|pmos@1|diff-top|-8.25|17|contact@3||-8.5|17
+AMetal-1|net@5||1|S900|well@0||-8.5|27.5|contact@3||-8.5|16.5
+AMetal-1|net@6||1|S900|contact@0||-8.5|-2.5|substr@0||-8.5|-11.5
+APolysilicon-1|net@8|||S2700|nmos@4|poly-right|-4.5|2|pin@0||-4.5|6
+APolysilicon-1|net@9|||S2700|pin@0||-4.5|6|pmos@1|poly-left|-4.5|10
+APolysilicon-1|net@10|||S1800|IN||-14|6|pin@0||-4.5|6
+AMetal-1|net@12||1|S2700|contact@1||-0.5|-2.5|pin@2||-0.5|5
+AMetal-1|net@13||1|S2700|pin@2||-0.5|5|contact@2||-0.5|16.5
+AMetal-1|net@14||1|S1800|pin@2||-0.5|5|pin@1||6|5
+EGND||D5G2;|substr@0||G
+EIN||D5G2;|IN||I
+EOUT||D5G2;|pin@1||O
+EVDD||D5G2;|well@0||P
+X
+
+# Cell INV_S2;1{sch}
+CINV_S2;1{sch}||schematic|1585936639569|1586571901627|
+IINV_S2;1{ic}|INV_S2@0||13|15|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-11|0|-1|-1||
+NOff-Page|conn@1||7|0|-1|-1||
+NGround|gnd@0||-1.5|-9|-1|-1||
+NTransistor|nmos@0||-3.5|-2.5|||R||ATTR_length(D5G0.5;RRRX0.25;Y-2;)D2.0|ATTR_width(D5G1;RRRX1;Y-2;)D10.0|SIM_spice_model(D5G1;RRRY-0.5;)SNMOS
+NWire_Pin|pin@0||-4.5|0||||
+NWire_Pin|pin@1||-1.5|0||||
+NTransistor|pmos@0||-3.5|3|||YR|2|ATTR_length(D5G0.5;RRRX0.25;Y-0.5;)S2.0|ATTR_width(D5G1;RRRX1;Y-0.5;)S18|SIM_spice_model(D5G1;RRRY-0.5;)SPMOS
+NPower|pwr@0||-1.5|9|-1|-1||
+Awire|net@0|||900|nmos@0|s|-1.5|-4.5|gnd@0||-1.5|-7.5
+Awire|net@1|||2700|pmos@0|s|-1.5|5|pwr@0||-1.5|9
+Awire|net@2|||1800|conn@0|y|-9.5|0|pin@0||-4.5|0
+Awire|net@3|||900|pmos@0|g|-4.5|3|pin@0||-4.5|0
+Awire|net@4|||900|pin@0||-4.5|0|nmos@0|g|-4.5|-2.5
+Awire|net@5|||900|pmos@0|d|-1.5|1|pin@1||-1.5|0
+Awire|net@6|||900|pin@1||-1.5|0|nmos@0|d|-1.5|-0.5
+Awire|net@7|||1800|pin@1||-1.5|0|conn@1|a|5.5|0
+EIN||D5G2;|conn@0|a|U
+EOUT||D5G2;|conn@1|y|U
+X
+
+# Cell INV_S2_L1_TR0;1{lay}
+CINV_S2_L1_TR0;1{lay}||mocmos|1586572439335|1586572700196|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L1_TR100;1{lay}
+CINV_S2_L1_TR100;1{lay}||mocmos|1586572439335|1586573222696|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L1_TR400;1{lay}
+CINV_S2_L1_TR400;1{lay}||mocmos|1586572439335|1586573635644|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L1_TR800;1{lay}
+CINV_S2_L1_TR800;1{lay}||mocmos|1586572439335|1586574243336|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L2_TR0;1{lay}
+CINV_S2_L2_TR0;1{lay}||mocmos|1586572439335|1586572927454|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L2_TR100;1{lay}
+CINV_S2_L2_TR100;1{lay}||mocmos|1586572439335|1586573347011|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L2_TR400;1{lay}
+CINV_S2_L2_TR400;1{lay}||mocmos|1586572439335|1586573768324|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L2_TR800;1{lay}
+CINV_S2_L2_TR800;1{lay}||mocmos|1586572439335|1586574300503|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L4_TR0;1{lay}
+CINV_S2_L4_TR0;1{lay}||mocmos|1586572439335|1586573015265|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L4_TR100;1{lay}
+CINV_S2_L4_TR100;1{lay}||mocmos|1586572439335|1586573414400|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L4_TR400;1{lay}
+CINV_S2_L4_TR400;1{lay}||mocmos|1586572439335|1586573836736|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L4_TR800;1{lay}
+CINV_S2_L4_TR800;1{lay}||mocmos|1586572439335|1586574380705|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L8_TR0;1{lay}
+CINV_S2_L8_TR0;1{lay}||mocmos|1586572439335|1586573091879|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L8_TR100;1{lay}
+CINV_S2_L8_TR100;1{lay}||mocmos|1586572439335|1586573559874|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L8_TR400;1{lay}
+CINV_S2_L8_TR400;1{lay}||mocmos|1586572439335|1586574155270|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_L8_TR800;1{lay}
+CINV_S2_L8_TR800;1{lay}||mocmos|1586572439335|1586574441394|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_sim;1{lay}
+CINV_S2_sim;1{lay}||mocmos|1586572439335|1586572621591|
+IINV_S2;2{lay}|INV_S2@0||3.5|-11|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-45.5|26||||
+NMetal-1-Pin|pin@1||-44|-27||||
+NMetal-1-Pin|pin@2||34.5|-3||||
+NMetal-1-Pin|pin@3||-39|-5||||
+Ngeneric:Invisible-Pin|pin@4||48|10|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 100n,cload OUT 0 250fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S2@0|GND|-1|-27|pin@1||-44|-27
+AMetal-1|IN|D5G1;|1|S0|INV_S2@0|IN|-10.5|-5|pin@3||-39|-5
+AMetal-1|OUT|D5G1;|1|S1800|INV_S2@0|OUT|9.5|-3|pin@2||34.5|-3
+AMetal-1|VDD|D5G1;|1|S0|INV_S2@0|VDD|-1|26|pin@0||-45.5|26
+X
+
+# Cell INV_S2_sim;1{sch}
+CINV_S2_sim;1{sch}||schematic|1585936891553|1586571932362|
+IINV_S2;1{ic}|INV_S2@0||-2.5|3|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NWire_Pin|pin@0||-31.5|5||||
+NWire_Pin|pin@1||15|5||||
+Ngeneric:Invisible-Pin|pin@2||-10|-7.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 100n,cload OUT 0 250fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+Awire|IN|D5G1;||0|INV_S2@0|IN|-17.5|5|pin@0||-31.5|5
+Awire|OUT|D5G1;||1800|INV_S2@0|OUT|-6.5|5|pin@1||15|5
+X
+
+# Cell INV_S4;1{ic}
+CINV_S4;1{ic}||artwork|1585936690468|1585936834355|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NTriangle|art@2||-9|2|6|6|RRR|
+NCircle|art@3||-5|2|2|2||
+Nschematic:Bus_Pin|pin@0||-15|2||||
+Nschematic:Wire_Pin|pin@1||-12|2||||
+Nschematic:Bus_Pin|pin@2||-4|2||||
+Nschematic:Wire_Pin|pin@3||-2|2||||
+Aschematic:wire|net@0|||0|pin@1||-12|2|pin@0||-15|2
+Aschematic:wire|net@1|||0|pin@3||-2|2|pin@2||-4|2
+EIN||D5G1;X1;|pin@0||U
+EOUT||D5G1;X1;|pin@2||U
+X
+
+# Cell INV_S4;1{lay}
+CINV_S4;1{lay}||mocmos|1586222066693|1586574882690||DRC_last_good_drc_area_date()G1586574887139|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1586574887139
+NMetal-1-Polysilicon-1-Con|IN|D5G1;|-14|4.5||||
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-N-Active-Con|contact@0||-8.5|-12||15||
+NMetal-1-N-Active-Con|contact@1||-0.5|-12||15||
+NMetal-1-P-Active-Con|contact@2||-0.5|28||31||
+NMetal-1-P-Active-Con|contact@3||-8.5|28||31||
+NN-Transistor|nmos@4||-4.5|-12|17||R||SIM_spice_model(D5G1;)SNMOS
+NPolysilicon-1-Pin|pin@0||-4.5|5||||
+NMetal-1-Pin|pin@1||6|1.5||||
+NMetal-1-Pin|pin@2||-0.5|1.5||||
+NP-Transistor|pmos@1||-4.5|28|33||R||SIM_spice_model(D5G1;)SPMOS
+NMetal-1-P-Well-Con|substr@0||-4.5|-28.5|14|||
+NMetal-1-N-Well-Con|well@0||-4.5|52.5|14|||
+AN-Active|net@0|||S0|nmos@4|diff-top|-8.25|-8|contact@0||-8.5|-8
+AN-Active|net@1|||S1800|nmos@4|diff-bottom|-0.75|-8|contact@1||-0.5|-8
+AP-Active|net@2|||S1800|pmos@1|diff-bottom|-0.75|24|contact@2||-0.5|24
+AP-Active|net@4|||S0|pmos@1|diff-top|-8.25|24|contact@3||-8.5|24
+AMetal-1|net@5||1|S900|well@0||-8.5|52.5|contact@3||-8.5|40
+AMetal-1|net@6||1|S900|contact@0||-8.5|-8|substr@0||-8.5|-28.5
+APolysilicon-1|net@8|||S2700|nmos@4|poly-right|-4.5|0|pin@0||-4.5|5
+APolysilicon-1|net@9|||S2700|pin@0||-4.5|5|pmos@1|poly-left|-4.5|8
+APolysilicon-1|net@10|||S1800|IN||-14|5|pin@0||-4.5|5
+AMetal-1|net@12||1|S2700|contact@1||-0.5|-12|pin@2||-0.5|1.5
+AMetal-1|net@13||1|S2700|pin@2||-0.5|1.5|contact@2||-0.5|24
+AMetal-1|net@14||1|S1800|pin@2||-0.5|1.5|pin@1||6|1.5
+EGND||D5G2;|substr@0||G
+EIN||D5G2;|IN||I
+EOUT||D5G2;|pin@1||O
+EVDD||D5G2;|well@0||P
+X
+
+# Cell INV_S4;1{sch}
+CINV_S4;1{sch}||schematic|1585936639569|1586574645709|
+IINV_S4;1{ic}|INV_S2@0||13|15|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-11|0|-1|-1||
+NOff-Page|conn@1||7|0|-1|-1||
+NGround|gnd@0||-1.5|-9|-1|-1||
+NTransistor|nmos@0||-3.5|-2.5|||R||ATTR_length(D5G0.5;RRRX0.25;Y-2;)S2.0|ATTR_width(D5G1;RRRX1;Y-2;)S20|SIM_spice_model(D5G1;RRRY-0.5;)SNMOS
+NWire_Pin|pin@0||-4.5|0||||
+NWire_Pin|pin@1||-1.5|0||||
+NTransistor|pmos@0||-3.5|3|||YR|2|ATTR_length(D5G0.5;RRRX0.25;Y-0.5;)S2.0|ATTR_width(D5G1;RRRX1;Y-0.5;)S36|SIM_spice_model(D5G1;RRRY-0.5;)SPMOS
+NPower|pwr@0||-1.5|9|-1|-1||
+Awire|net@0|||900|nmos@0|s|-1.5|-4.5|gnd@0||-1.5|-7.5
+Awire|net@1|||2700|pmos@0|s|-1.5|5|pwr@0||-1.5|9
+Awire|net@2|||1800|conn@0|y|-9.5|0|pin@0||-4.5|0
+Awire|net@3|||900|pmos@0|g|-4.5|3|pin@0||-4.5|0
+Awire|net@4|||900|pin@0||-4.5|0|nmos@0|g|-4.5|-2.5
+Awire|net@5|||900|pmos@0|d|-1.5|1|pin@1||-1.5|0
+Awire|net@6|||900|pin@1||-1.5|0|nmos@0|d|-1.5|-0.5
+Awire|net@7|||1800|pin@1||-1.5|0|conn@1|a|5.5|0
+EIN||D5G2;|conn@0|a|U
+EOUT||D5G2;|conn@1|y|U
+X
+
+# Cell INV_S4_L1_TR0;1{lay}
+CINV_S4_L1_TR0;1{lay}||mocmos|1586574986499|1586575090533|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L1_TR100;1{lay}
+CINV_S4_L1_TR100;1{lay}||mocmos|1586574986499|1586575449948|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L1_TR400;1{lay}
+CINV_S4_L1_TR400;1{lay}||mocmos|1586574986499|1586575700842|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L1_TR800;1{lay}
+CINV_S4_L1_TR800;1{lay}||mocmos|1586574986499|1586576026614|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L2_TR0;1{lay}
+CINV_S4_L2_TR0;1{lay}||mocmos|1586574986499|1586575172858|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L2_TR100;1{lay}
+CINV_S4_L2_TR100;1{lay}||mocmos|1586574986499|1586575511651|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L2_TR400;1{lay}
+CINV_S4_L2_TR400;1{lay}||mocmos|1586574986499|1586575764380|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L2_TR800;1{lay}
+CINV_S4_L2_TR800;1{lay}||mocmos|1586574986499|1586576115817|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L4_TR0;1{lay}
+CINV_S4_L4_TR0;1{lay}||mocmos|1586574986499|1586575291174|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L4_TR100;1{lay}
+CINV_S4_L4_TR100;1{lay}||mocmos|1586574986499|1586575571571|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L4_TR400;1{lay}
+CINV_S4_L4_TR400;1{lay}||mocmos|1586574986499|1586575856518|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L4_TR800;1{lay}
+CINV_S4_L4_TR800;1{lay}||mocmos|1586574986499|1586576170420|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L8_TR0;1{lay}
+CINV_S4_L8_TR0;1{lay}||mocmos|1586574986499|1586575393395|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L8_TR100;1{lay}
+CINV_S4_L8_TR100;1{lay}||mocmos|1586574986499|1586575627913|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L8_TR400;1{lay}
+CINV_S4_L8_TR400;1{lay}||mocmos|1586574986499|1586575943236|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S4_L8_TR800;1{lay}
+CINV_S4_L8_TR800;1{lay}||mocmos|1586574986499|1586576233115|
+IINV_S4;1{lay}|INV_S4@0||-0.5|-11.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-68|41||||
+NMetal-1-Pin|pin@1||-52|-40||||
+NMetal-1-Pin|pin@2||-54.5|-7||||
+NMetal-1-Pin|pin@3||48|-10||||
+Ngeneric:Invisible-Pin|pin@4||54.5|24|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S4@0|GND|-5|-40|pin@1||-52|-40
+AMetal-1|IN|D5G1;|1|S0|INV_S4@0|IN|-14.5|-7|pin@2||-54.5|-7
+AMetal-1|OUT|D5G1;|1|S1800|INV_S4@0|OUT|5.5|-10|pin@3||48|-10
+AMetal-1|VDD|D5G1;|1|S0|INV_S4@0|VDD|-5|41|pin@0||-68|41
+X
+
+# Cell INV_S8;1{ic}
+CINV_S8;1{ic}||artwork|1585936690468|1585936834355|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NTriangle|art@2||-9|2|6|6|RRR|
+NCircle|art@3||-5|2|2|2||
+Nschematic:Bus_Pin|pin@0||-15|2||||
+Nschematic:Wire_Pin|pin@1||-12|2||||
+Nschematic:Bus_Pin|pin@2||-4|2||||
+Nschematic:Wire_Pin|pin@3||-2|2||||
+Aschematic:wire|net@0|||0|pin@1||-12|2|pin@0||-15|2
+Aschematic:wire|net@1|||0|pin@3||-2|2|pin@2||-4|2
+EIN||D5G1;X1;|pin@0||U
+EOUT||D5G1;X1;|pin@2||U
+X
+
+# Cell INV_S8;1{lay}
+CINV_S8;1{lay}||mocmos|1586222066693|1586576699286||DRC_last_good_drc_area_date()G1586576703217|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1586576703217
+NMetal-1-Polysilicon-1-Con|IN|D5G1;|-14|0.5||||
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-N-Active-Con|contact@0||-8.5|-26.5||35||
+NMetal-1-N-Active-Con|contact@1||-0.5|-26.5||35||
+NMetal-1-P-Active-Con|contact@2||-0.5|41.5||67||
+NMetal-1-P-Active-Con|contact@3||-8.5|41.5||67||
+NN-Transistor|nmos@4||-4.5|-26.5|37||R||SIM_spice_model(D5G1;)SNMOS
+NPolysilicon-1-Pin|pin@0||-4.5|1||||
+NMetal-1-Pin|pin@1||6|0||||
+NMetal-1-Pin|pin@2||-0.5|0||||
+NP-Transistor|pmos@1||-4.5|41.5|69||R||SIM_spice_model(D5G1;)SPMOS
+NMetal-1-P-Well-Con|substr@0||-4.5|-53|14|||
+NMetal-1-N-Well-Con|well@0||-4.5|84|14|||
+AN-Active|net@0|||S0|nmos@4|diff-top|-8.25|-27|contact@0||-8.5|-27
+AN-Active|net@1|||S1800|nmos@4|diff-bottom|-0.75|-27|contact@1||-0.5|-27
+AP-Active|net@2|||S1800|pmos@1|diff-bottom|-0.75|24|contact@2||-0.5|24
+AP-Active|net@4|||S0|pmos@1|diff-top|-8.25|24|contact@3||-8.5|24
+AMetal-1|net@5||1|S900|well@0||-8.5|84|contact@3||-8.5|42
+AMetal-1|net@6||1|S900|contact@0||-8.5|-22|substr@0||-8.5|-53
+APolysilicon-1|net@8|||S2700|nmos@4|poly-right|-4.5|-4.5|pin@0||-4.5|1
+APolysilicon-1|net@9|||S2700|pin@0||-4.5|1|pmos@1|poly-left|-4.5|3.5
+APolysilicon-1|net@10|||S1800|IN||-14|1|pin@0||-4.5|1
+AMetal-1|net@12||1|S2700|contact@1||-0.5|-27.5|pin@2||-0.5|0
+AMetal-1|net@13||1|S2700|pin@2||-0.5|0|contact@2||-0.5|24
+AMetal-1|net@14||1|S1800|pin@2||-0.5|0|pin@1||6|0
+EGND||D5G2;|substr@0||G
+EIN||D5G2;|IN||I
+EOUT||D5G2;|pin@1||O
+EVDD||D5G2;|well@0||P
+X
+
+# Cell INV_S8;1{sch}
+CINV_S8;1{sch}||schematic|1585936639569|1586576410127|
+IINV_S8;1{ic}|INV_S2@0||13|15|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-11|0|-1|-1||
+NOff-Page|conn@1||7|0|-1|-1||
+NGround|gnd@0||-1.5|-9|-1|-1||
+NTransistor|nmos@0||-3.5|-2.5|||R||ATTR_length(D5G0.5;RRRX0.25;Y-2;)S2.0|ATTR_width(D5G1;RRRX1;Y-2;)S40|SIM_spice_model(D5G1;RRRY-0.5;)SNMOS
+NWire_Pin|pin@0||-4.5|0||||
+NWire_Pin|pin@1||-1.5|0||||
+NTransistor|pmos@0||-3.5|3|||YR|2|ATTR_length(D5G0.5;RRRX0.25;Y-0.5;)S2.0|ATTR_width(D5G1;RRRX1;Y-0.5;)S72|SIM_spice_model(D5G1;RRRY-0.5;)SPMOS
+NPower|pwr@0||-1.5|9|-1|-1||
+Awire|net@0|||900|nmos@0|s|-1.5|-4.5|gnd@0||-1.5|-7.5
+Awire|net@1|||2700|pmos@0|s|-1.5|5|pwr@0||-1.5|9
+Awire|net@2|||1800|conn@0|y|-9.5|0|pin@0||-4.5|0
+Awire|net@3|||900|pmos@0|g|-4.5|3|pin@0||-4.5|0
+Awire|net@4|||900|pin@0||-4.5|0|nmos@0|g|-4.5|-2.5
+Awire|net@5|||900|pmos@0|d|-1.5|1|pin@1||-1.5|0
+Awire|net@6|||900|pin@1||-1.5|0|nmos@0|d|-1.5|-0.5
+Awire|net@7|||1800|pin@1||-1.5|0|conn@1|a|5.5|0
+EIN||D5G2;|conn@0|a|U
+EOUT||D5G2;|conn@1|y|U
+X
+
+# Cell INV_S8_L1_TR0;1{lay}
+CINV_S8_L1_TR0;1{lay}||mocmos|1586576745741|1586576866015|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L1_TR100;1{lay}
+CINV_S8_L1_TR100;1{lay}||mocmos|1586576745741|1586577151333|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L1_TR400;1{lay}
+CINV_S8_L1_TR400;1{lay}||mocmos|1586576745741|1586577404368|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L1_TR800;1{lay}
+CINV_S8_L1_TR800;1{lay}||mocmos|1586576745741|1586577647536|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 13.29fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L2_TR0;1{lay}
+CINV_S8_L2_TR0;1{lay}||mocmos|1586576745741|1586576972026|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L2_TR100;1{lay}
+CINV_S8_L2_TR100;1{lay}||mocmos|1586576745741|1586577222625|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L2_TR400;1{lay}
+CINV_S8_L2_TR400;1{lay}||mocmos|1586576745741|1586577469963|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L2_TR800;1{lay}
+CINV_S8_L2_TR800;1{lay}||mocmos|1586576745741|1586577705431|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 26.58fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L4_TR0;1{lay}
+CINV_S8_L4_TR0;1{lay}||mocmos|1586576745741|1586577036846|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L4_TR100;1{lay}
+CINV_S8_L4_TR100;1{lay}||mocmos|1586576745741|1586577273178|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L4_TR400;1{lay}
+CINV_S8_L4_TR400;1{lay}||mocmos|1586576745741|1586577522287|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L4_TR800;1{lay}
+CINV_S8_L4_TR800;1{lay}||mocmos|1586576745741|1586577777800|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 53.16fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L8_TR0;1{lay}
+CINV_S8_L8_TR0;1{lay}||mocmos|1586576745741|1586577094159|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L8_TR100;1{lay}
+CINV_S8_L8_TR100;1{lay}||mocmos|1586576745741|1586577333021|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 167ps 167ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L8_TR400;1{lay}
+CINV_S8_L8_TR400;1{lay}||mocmos|1586576745741|1586577583061|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 667ps 667ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell INV_S8_L8_TR800;1{lay}
+CINV_S8_L8_TR800;1{lay}||mocmos|1586576745741|1586577836376|
+IINV_S8;1{lay}|INV_S8@0||-4|-15.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NMetal-1-Pin|pin@0||-74.5|68.5||||
+NMetal-1-Pin|pin@1||-79.5|-15||||
+NMetal-1-Pin|pin@2||92.5|-15.5||||
+NMetal-1-Pin|pin@3||-96|-68.5||||
+Ngeneric:Invisible-Pin|pin@4||70.5|44.5|||||SIM_spice_card(D5G1;)S[vdd vdd 0 DC 3.3,vin IN 0 dc pulse 0 3.3 10n 1333ps 1333ps 10n,.tran 0 30n,cload OUT 0 106.32fF,.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1,.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1,.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1,.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1,".include C:\\Electric\\scmos18.txt",.END]
+AMetal-1|GND|D5G1;|1|S0|INV_S8@0|GND|-8.5|-68.5|pin@3||-96|-68.5
+AMetal-1|IN|D5G1;|1|S0|INV_S8@0|IN|-18|-15|pin@1||-79.5|-15
+AMetal-1|OUT|D5G1;|1|S1800|INV_S8@0|OUT|2|-15.5|pin@2||92.5|-15.5
+AMetal-1|VDD|D5G1;|1|S0|INV_S8@0|VDD|-8.5|68.5|pin@0||-74.5|68.5
+X
+
+# Cell ObtainingCapacitanceInverter;2{sch}
+CObtainingCapacitanceInverter;2{sch}||schematic|1570969381653|1586564842428|
+IINV_S1;1{ic}|INV_S1@0||2|-4|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Ngeneric:Invisible-Pin|pin@2||-4|-11|||||SIM_spice_card(D5G1;)S[vdd vdd 0 dc 5,vin in 0 DC pulse 0 5 0.001n 0.001n 5n 10n,.tran 0 10n,.measure timeConstant + TRIG v(invPulse) VAL= 0 RISE=1 + TARG v(invPulse) VAL=3.15 RISE=1,".include C:\\Electric\\scmos18.txt"]
+NWire_Pin|pin@3||21.5|-3||||
+NWire_Pin|pin@4||-20|1||||
+NWire_Pin|pin@5||-4|1||||
+NWire_Pin|pin@6||16.5|-3||||
+NWire_Pin|pin@7||-4|-4||||
+NWire_Pin|pin@8||16.5|-4||||
+NResistor|res@0||-14|1|||||SCHEM_resistance(D5G1;)S25k
+Awire|in|D5G1;||1800|pin@4||-20|1|res@0|a|-16|1
+Awire|invPulse|D5G1;||1800|res@0|b|-12|1|pin@5||-4|1
+Awire|net@0|||900|pin@5||-4|1|pin@7||-4|-4
+Awire|net@1|||0|INV_S1@0|IN|-2.5|-4|pin@7||-4|-4
+Awire|net@2|||1800|INV_S1@0|OUT|8|-4|pin@8||16.5|-4
+Awire|net@3|||900|pin@6||16.5|-3|pin@8||16.5|-4
+Awire|out|D5G1;||0|pin@3||21.5|-3|pin@6||16.5|-3
+X
+
+# Cell ObtainingCapacitanceInverter;1{sch}
+CObtainingCapacitanceInverter;1{sch}||schematic|1570969381653|1586564842428|
+IINV_S1;1{ic}|INV_S1@0||2|-4|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Ngeneric:Invisible-Pin|pin@2||-4|-11|||||SIM_spice_card(D5G1;)S[vdd vdd 0 dc 5,vin in 0 DC pulse 0 5 0.001n 0.001n 5n 10n,.tran 0 10n,.measure timeConstant + TRIG v(invPulse) VAL= 0 RISE=1 + TARG v(invPulse) VAL=3.15 RISE=1,".include C:\\Electric\\scmos18.txt"]
+NWire_Pin|pin@3||21.5|-3||||
+NWire_Pin|pin@4||-20|1||||
+NWire_Pin|pin@5||-4|1||||
+NWire_Pin|pin@6||16.5|-3||||
+NWire_Pin|pin@7||-4|-4||||
+NWire_Pin|pin@8||16.5|-4||||
+NResistor|res@0||-14|1|||||SCHEM_resistance(D5G1;)S25k
+Awire|in|D5G1;||1800|pin@4||-20|1|res@0|a|-16|1
+Awire|invPulse|D5G1;||1800|res@0|b|-12|1|pin@5||-4|1
+Awire|net@0|||900|pin@5||-4|1|pin@7||-4|-4
+Awire|net@1|||0|INV_S1@0|IN|-2.5|-4|pin@7||-4|-4
+Awire|net@2|||1800|INV_S1@0|OUT|8|-4|pin@8||16.5|-4
+Awire|net@3|||900|pin@6||16.5|-3|pin@8||16.5|-4
+Awire|out|D5G1;||0|pin@3||21.5|-3|pin@6||16.5|-3
+X

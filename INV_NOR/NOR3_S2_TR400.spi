@@ -1,0 +1,42 @@
+*** SPICE deck for cell NOR3_S2_TR400{lay} from library NOR3
+*** Created on Sun Apr 12, 2020 05:09:58
+*** Last revised on Sun Apr 12, 2020 05:28:48
+*** Written on Sun Apr 12, 2020 05:28:51 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT NOR3__NOR3_S2 FROM CELL NOR3_S2{lay}
+.SUBCKT NOR3__NOR3_S2 A B C gnd out vdd
+Mnmos@0 gnd A out gnd NMOS L=0.36U W=1.8U AS=5.913P AD=3.888P PS=10.71U PD=9.66U
+Mnmos@1 out B gnd gnd NMOS L=0.36U W=1.8U AS=3.888P AD=5.913P PS=9.66U PD=10.71U
+Mnmos@2 gnd C out gnd NMOS L=0.36U W=1.8U AS=5.913P AD=3.888P PS=10.71U PD=9.66U
+Mpmos@0 net@14 B net@13 vdd PMOS L=0.36U W=13.32U AS=7.339P AD=7.387P PS=27.72U PD=27.9U
+Mpmos@3 net@13 C out vdd PMOS L=0.36U W=13.32U AS=5.913P AD=7.339P PS=10.71U PD=27.72U
+Mpmos@4 vdd A net@14 vdd PMOS L=0.36U W=13.32U AS=7.387P AD=24.3P PS=27.9U PD=45.18U
+.ENDS NOR3__NOR3_S2
+
+*** TOP LEVEL CELL: NOR3_S2_TR400{lay}
+XNOR3_S2@0 IN_1 GND GND GND OUT_2 VDD NOR3__NOR3_S2
+XNOR3_S2@1 IN_1 GND GND GND OUT_3 VDD NOR3__NOR3_S2
+XNOR3_S2@2 IN_1 GND GND GND OUT_4 VDD NOR3__NOR3_S2
+XNOR3_S2@3 IN_1 GND GND GND OUT_1 VDD NOR3__NOR3_S2
+
+* Spice Code nodes in cell cell 'NOR3_S2_TR400{lay}'
+vdd vdd 0 DC 3.3
+vin IN_1 0 dc pulse 0 3.3 10n 667ps 667ps 10n
+.tran 0 30n
+cload_1 OUT_1 0 13.29fF
+cload_2 OUT_2 0 26.58fF
+cload_3 OUT_3 0 53.16fF
+cload_4 OUT_4 0 106.32fF
+.measure tpdr_1 trig v(IN_1) val=1.67 fall=1 TARG v(OUT_1) val=1.67 rise=1
+.measure tpdf_1 trig v(IN_1) val=1.67 rise=1 TARG v(OUT_1) val=1.67 fall=1
+.measure tpdr_2 trig v(IN_1) val=1.67 fall=1 TARG v(OUT_2) val=1.67 rise=1
+.measure tpdf_2 trig v(IN_1) val=1.67 rise=1 TARG v(OUT_2) val=1.67 fall=1
+.measure tpdr_3 trig v(IN_1) val=1.67 fall=1 TARG v(OUT_3) val=1.67 rise=1
+.measure tpdf_3 trig v(IN_1) val=1.67 rise=1 TARG v(OUT_3) val=1.67 fall=1
+.measure tpdr_4 trig v(IN_1) val=1.67 fall=1 TARG v(OUT_4) val=1.67 rise=1
+.measure tpdf_4 trig v(IN_1) val=1.67 rise=1 TARG v(OUT_4) val=1.67 fall=1
+.include C:\Electric\scmos18.txt
+.END
+.END

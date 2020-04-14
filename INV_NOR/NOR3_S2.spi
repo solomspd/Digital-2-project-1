@@ -1,0 +1,15 @@
+*** SPICE deck for cell NOR3_S2{lay} from library NOR3
+*** Created on Mon Oct 14, 2019 11:01:49
+*** Last revised on Sun Apr 12, 2020 05:03:03
+*** Written on Sun Apr 12, 2020 05:03:19 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: NOR3_S2{lay}
+Mnmos@0 gnd A out gnd NMOS L=0.36U W=1.8U AS=5.913P AD=3.888P PS=10.71U PD=9.66U
+Mnmos@1 out B gnd gnd NMOS L=0.36U W=1.8U AS=3.888P AD=5.913P PS=9.66U PD=10.71U
+Mnmos@2 gnd C out gnd NMOS L=0.36U W=1.8U AS=5.913P AD=3.888P PS=10.71U PD=9.66U
+Mpmos@0 net@14 B net@13 vdd PMOS L=0.36U W=13.32U AS=7.339P AD=7.387P PS=27.72U PD=27.9U
+Mpmos@3 net@13 C out vdd PMOS L=0.36U W=13.32U AS=5.913P AD=7.339P PS=10.71U PD=27.72U
+Mpmos@4 vdd A net@14 vdd PMOS L=0.36U W=13.32U AS=7.387P AD=24.3P PS=27.9U PD=45.18U
+.END
