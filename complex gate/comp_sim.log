@@ -1,0 +1,49 @@
+Circuit: *** SPICE deck for cell comp_sim{sch} from library noname
+
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+WARNING: Node COMP@0:PMOS@1_S is floating.
+WARNING: Node COMP@0:PMOS@2_D is floating.
+
+WARNING: Less than two connections to node COMP@0:NMOS@1_D.  This node is used by M:COMP@0:NMOS@1.
+WARNING: Less than two connections to node F.  This node is used by M:COMP@0:NMOS@3.
+WARNING: Less than two connections to node COMP@0:NET@41.  This node is used by M:COMP@0:PMOS@0.
+WARNING: Less than two connections to node COMP@0:PMOS@1_D.  This node is used by M:COMP@0:PMOS@1.
+WARNING: Less than two connections to node COMP@0:PMOS@1_S.  This node is used by M:COMP@0:PMOS@1.
+WARNING: Less than two connections to node COMP@0:PMOS@2_D.  This node is used by M:COMP@0:PMOS@2.
+WARNING: Less than two connections to node COMP@0:NET@40.  This node is used by M:COMP@0:PMOS@3.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+
+tdpr=1.0001e-006 FROM 5e-011 TO 1.00015e-006
+tdpf=9.9987e-007 FROM 1.00015e-006 TO 2.00002e-006
+trise=4.00008e-006 FROM 1.00012e-006 TO 5.0002e-006
+tfall=-3.00014e-006 FROM 5.0002e-006 TO 2.00006e-006
+
+
+Date: Sun Apr 12 17:22:20 2020
+Total elapsed time: 0.085 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3740
+traniter = 3720
+tranpoints = 1655
+accept = 1517
+rejected = 138
+matrix size = 20
+fillins = 0
+solver = Normal
+Matrix Compiler1: 972 bytes object code size  0.3/0.1/[0.1]
+Matrix Compiler2: 1.76 KB object code size  0.2/0.2/[0.2]
+

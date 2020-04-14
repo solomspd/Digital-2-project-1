@@ -1,0 +1,40 @@
+*** SPICE deck for cell somp_sim_lay{lay} from library noname
+*** Created on Sun Apr 05, 2020 06:26:11
+*** Last revised on Mon Apr 13, 2020 03:16:35
+*** Written on Mon Apr 13, 2020 03:17:50 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT noname__comp FROM CELL noname:comp{lay}
+.SUBCKT noname__comp gnd out vdd W X Y Z
+Mnmos@0 net@29 net@42 gnd gnd NMOS L=0.36U W=0.9U AS=4.739P AD=0.535P PS=13.23U PD=2.52U
+Mnmos@1 out net@43 net@29 gnd N L=0.36U W=0.9U AS=0.535P AD=1.835P PS=2.52U PD=5.445U
+Mnmos@2 net@30 W out gnd N L=0.36U W=0.9U AS=1.835P AD=0.583P PS=5.445U PD=2.7U
+Mnmos@3 gnd X net@30 gnd N L=0.36U W=0.9U AS=0.583P AD=4.739P PS=2.7U PD=13.23U
+Mpmos@0 vdd net@42 vdd vdd P L=0.36U W=1.98U AS=3.124P AD=3.124P PS=7.77U PD=7.77U
+Mpmos@1 vdd net@43 vdd vdd P L=0.36U W=1.98U AS=3.124P AD=3.124P PS=7.77U PD=7.77U
+Mpmos@2 vdd W out vdd P L=0.36U W=1.98U AS=1.835P AD=3.124P PS=5.445U PD=7.77U
+Mpmos@3 out X vdd vdd PMOS L=0.36U W=1.98U AS=3.124P AD=1.835P PS=7.77U PD=5.445U
+.ENDS noname__comp
+
+*** TOP LEVEL CELL: noname:somp_sim_lay{lay}
+Xcomp@0 GND F VDD W X Y Z noname__comp
+
+* Spice Code nodes in cell cell 'noname:somp_sim_lay{lay}'
+.param transsi=166.66p
+vdd VDD 0 DC 3.3
+vw W 0 pulse 3.3 0 1u {transsi} {transsi} 2u 3u
+vx X 0 DC 3.3
+vy Y 0 DC 3.3
+vz Z 0 DC 3.3
+*vx X 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vy Y 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vz Z 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+cload F 0 26.58fF
+.tran 0 10u
+.measure tdpr trig v(W) val=1.65 fall =1 TARG v(F) val=1.65 rise=2
+.measure tdpf trig v(W) val=1.65 rise =1 TARG v(F) val=1.65 fall=2
+.measure trise trig v(F) val=0.66 rise =1 TARG v(F) val=2.64 rise=1
+.measure tfall trig v(F) val=2.64 fall =1 TARG v(F) val=0.66 fall=1
+.include '/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/scmos18(2).txt'
+.END

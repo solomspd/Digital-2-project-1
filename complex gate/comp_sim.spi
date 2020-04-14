@@ -1,0 +1,37 @@
+*** SPICE deck for cell comp_sim{sch} from library noname
+*** Created on Sun Apr 05, 2020 05:53:40
+*** Last revised on Sun Apr 12, 2020 04:44:54
+*** Written on Sun Apr 12, 2020 04:45:05 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT noname__comp FROM CELL comp{sch}
+.SUBCKT noname__comp F gnd vdd W X Y Z
+Mnmos@1 nmos@1_d X net@33 gnd N L=0.36U W=0.9U
+Mnmos@2 net@33 Y gnd gnd N L=0.36U W=0.9U
+Mnmos@3 F W net@34 gnd N L=0.36U W=0.9U
+Mnmos@4 net@34 Z gnd gnd N L=0.36U W=0.9U
+Mpmos@0 net@41 X net@26 vdd P L=0.36U W=2.16U
+Mpmos@1 pmos@1_d W pmos@1_s vdd P L=0.36U W=2.16U
+Mpmos@2 pmos@2_d Y net@26 vdd P L=0.36U W=2.16U
+Mpmos@3 vdd Z net@40 vdd P L=0.36U W=2.16U
+.ENDS noname__comp
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: comp_sim{sch}
+Xcomp@0 F GND VDD W X Y Z noname__comp
+
+* Spice Code nodes in cell cell 'comp_sim{sch}'
+vdd VDD 0 DC 3.3
+vw W 0 pulse 3.3 0 0 100p 100p 1u 2u
+vx X 0 pulse 3.3 0 0 100p 100p 2u 4u
+vy Y 0 pulse 3.3 0 0 100p 100p 4u 8u
+vz Z 0 pulse 3.3 0 0 100p 100p 8u 16u
+.tran 0 10u
+.measure tdpr trig v(W) val=1.65 fall =1 TARG v(F) val=1.65 rise=1
+.measure tdpf trig v(W) val=1.65 rise =1 TARG v(F) val=1.65 fall=1
+.measure trise trig v(F) val=0.66 rise =1 TARG v(F) val=2.64 rise=1
+.measure tfall trig v(F) val=2.64 fall =1 TARG v(F) val=0.66 fall=1
+.include '/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Lab/lab3/scmos18.txt'
+.END

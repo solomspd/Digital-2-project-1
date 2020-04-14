@@ -1,0 +1,40 @@
+*** SPICE deck for cell comp_sz4_sim{lay} from library test1
+*** Created on Tue Apr 14, 2020 06:25:42
+*** Last revised on Tue Apr 14, 2020 07:02:22
+*** Written on Tue Apr 14, 2020 07:21:03 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT test1__comp_sz4 FROM CELL comp_sz4{lay}
+.SUBCKT test1__comp_sz4 F gnd vdd W X Y Z
+Mnmos@0 net@1 X gnd gnd NMOS L=0.36U W=3.6U AS=6.561P AD=1.944P PS=16.74U PD=4.68U
+Mnmos@1 F Y net@1 gnd N L=0.36U W=3.6U AS=1.944P AD=4.892P PS=4.68U PD=11.25U
+Mnmos@2 net@4 W F gnd N L=0.36U W=3.6U AS=4.892P AD=1.944P PS=11.25U PD=4.68U
+Mnmos@3 gnd Z net@4 gnd N L=0.36U W=3.6U AS=1.944P AD=6.561P PS=4.68U PD=16.74U
+Mpmos@0 vdd X net@20 vdd PMOS L=0.36U W=7.92U AS=6.059P AD=7.922P PS=13.41U PD=18U
+Mpmos@1 net@20 Y vdd vdd P L=0.36U W=7.92U AS=7.922P AD=6.059P PS=18U PD=13.41U
+Mpmos@2 net@20 W F vdd P L=0.36U W=7.92U AS=4.892P AD=6.059P PS=11.25U PD=13.41U
+Mpmos@3 F Z net@20 vdd P L=0.36U W=7.92U AS=6.059P AD=4.892P PS=13.41U PD=11.25U
+.ENDS test1__comp_sz4
+
+*** TOP LEVEL CELL: comp_sz4_sim{lay}
+Xcomp_sz4@0 F GND VDD W X Y Z test1__comp_sz4
+
+* Spice Code nodes in cell cell 'comp_sz4_sim{lay}'
+.param transsi=166.66p
+vdd VDD 0 DC 3.3
+vw W 0 pulse 3.3 0 1u {transsi} {transsi} 2u 4u
+vx X 0 DC 3.3
+vy Y 0 DC 0
+vz Z 0 DC 3.3
+*vx X 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vy Y 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vz Z 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+cload F 0 26.58fF
+.tran 0 10u
+.measure tdpr trig v(W) val=1.65 fall =1 TARG v(F) val=1.65 rise=1
+.measure tdpf trig v(W) val=1.65 rise =1 TARG v(F) val=1.65 fall=1
+.measure trise trig v(F) val=0.66 rise =1 TARG v(F) val=2.64 rise=1
+.measure tfall trig v(F) val=2.64 fall =1 TARG v(F) val=0.66 fall=1
+.include '/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/scmos18(2).txt'
+.END
