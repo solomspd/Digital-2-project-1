@@ -179,19 +179,20 @@ cross/.default={10pt}}
 
 \subsection{Transition time}
 
-\subsection{Data collection}
-
-\subsection{Minimum cell height}
-
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
 		\begin{axis} [ylabel=$T_{pdr}$,xlabel=$\mathrm{C}_{inv}$]
 		\addplot table [x=Cinv,y=tpdr,col sep = tab] {./data/complex/size1.csv};
+		\addplot table 
 		\end{axis}
 	\end{tikzpicture}
-	\caption{$T_{pdr}$ to $\mathrm{C}_{inv}$ under $100ns$ transition time}
+	\caption{$T_{pdr}$ to $\mathrm{C}_{inv}$}
 	\label{}
 \end{figure}
+
+\subsection{Data collection}
+
+\subsection{Minimum cell height}
 
 \end{document}
