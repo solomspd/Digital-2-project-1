@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2020.3.31)  18 APR 2020 18:59
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2020.3.31)  18 APR 2020 19:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -391,7 +391,14 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 File: tikzlibraryplotmarks.code.tex 2019/08/03 v3.1.4b (3.1.4b)
  (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-))) (/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.aux
+))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)) (/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.aux
+
+LaTeX Warning: Label `' multiply defined.
+
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -404,24 +411,24 @@ LaTeX Warning: Label `' multiply defined.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into your preamble.
- on input line 13.
+ on input line 19.
 
 [1
 
@@ -430,19 +437,24 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
 \openout4 = `report.toc'.
 
  [1] [2] [3]
+Overfull \hbox (42.08148pt too wide) in paragraph at lines 173--174
+ [][] 
+ []
+
+[4]
 PGFPlots: reading {./data/complex/size1.csv}
- [4] [5] (/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.aux)
+ [5] [6] (/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32325 strings out of 492483
- 897609 string characters out of 6134979
+ 32515 strings out of 492483
+ 903078 string characters out of 6134979
  1217692 words of memory out of 5000000
- 36405 multiletter control sequences out of 15000+600000
+ 36588 multiletter control sequences out of 15000+600000
  7560 words of font info for 35 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,9n,103p,801b,1964s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,9n,103p,801b,1962s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.xdv (6 pages, 62008 bytes).
+Output written on /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.xdv (7 pages, 72760 bytes).

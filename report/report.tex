@@ -6,6 +6,12 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 
+\usetikzlibrary{shapes.misc}
+
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={10pt}}
+
 \author{Abdelsalam ElTamawy 900170376\\Emman\\Nada Badawy 900171975}
 \date{\today}
 \title{CSCE 3304 - Digital Design 2\\Project 1\\A small standard cell library\\}
@@ -132,6 +138,42 @@
 \end{figure}
 
 \subsection{Stick diagram}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\draw[blue,thick]
+		(0,0) node[left,black] {$GND$} -- (12,0)
+		(1,0) -- (1,2) node[cross] {}
+		(10,0) -- (10,2) node[cross] {}
+		(0,6) node[left,black] {$VDD$} -- (12,6)
+		(6,2) node[cross] {} -- (6,4) node[cross] {}
+		(6,3) -- (10,3) -- (10,4) node[cross] {}
+		(10,3) -- (12,3) node[right,black] {$f$}
+		(1,4) node[cross] {} -- (1,3) -- (5,3) -- (5,4) node[cross] {} -- (5,5) -- (8,5) -- (8,4) node[cross] {}
+		(3,6) -- (3,4) node[cross] {}
+		;
+
+		\draw[red,thick]
+		(2,1) node[below,black] {$x$} -- ++ (0,4)
+		(4,1) node[below,black] {$y$} -- ++ (0,4)
+		(7,1) node[below,black] {$w$} -- ++ (0,4)
+		(9,1) node[below,black] {$z$} -- ++ (0,4)
+		;
+
+		\draw[yellow,thick]
+		(1,2) -- (10,2)
+		;
+
+		\draw[yellow,green]
+		(1,4) -- (5,4)
+		(6,4) -- (10,4)
+		;
+
+	\end{tikzpicture}
+	\caption{}
+	\label{}
+\end{figure}
 
 \subsection{Layout}
 

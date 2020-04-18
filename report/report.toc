@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {6}Complex function}{4}% 
 \contentsline {subsection}{\numberline {6.1}Schematic}{4}% 
 \contentsline {subsection}{\numberline {6.2}Stick diagram}{5}% 
-\contentsline {subsection}{\numberline {6.3}Layout}{5}% 
-\contentsline {subsection}{\numberline {6.4}Transition time}{5}% 
-\contentsline {subsection}{\numberline {6.5}Data collection}{5}% 
-\contentsline {subsection}{\numberline {6.6}Minimum cell height}{5}% 
+\contentsline {subsection}{\numberline {6.3}Layout}{6}% 
+\contentsline {subsection}{\numberline {6.4}Transition time}{6}% 
+\contentsline {subsection}{\numberline {6.5}Data collection}{6}% 
+\contentsline {subsection}{\numberline {6.6}Minimum cell height}{6}% 
