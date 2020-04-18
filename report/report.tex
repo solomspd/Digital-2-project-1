@@ -225,10 +225,10 @@ cross/.default={10pt}}
 	\centering
 	\begin{tikzpicture}
 		\draw[blue,thick]
-		(0,0) node[left,black] {$GND$} -- (12,0)
+		(0,0) node[left,black] {$GND$} -- (11,0)
 		(1,0) -- (1,2) node[cross] {}
 		(10,0) -- (10,2) node[cross] {}
-		(0,6) node[left,black] {$VDD$} -- (12,6)
+		(0,6) node[left,black] {$VDD$} -- (11,6)
 		(6,2) node[cross] {} -- (6,4) node[cross] {}
 		(6,3) -- (10,3) -- (10,4) node[cross] {}
 		(10,3) -- (12,3) node[right,black] {$f$}
@@ -265,8 +265,8 @@ cross/.default={10pt}}
 	\centering
 	\begin{tikzpicture}
 		\begin{axis} [ylabel=$T_{pdr}$,xlabel=$\mathrm{C}_{inv}$]
-		% \addplot table [x=Cinv,y=tpdr,col sep = tab] {./data/complex/size1.csv};
-		% \addplot table 
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size1/cin1.csv};
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size1/cinv2.csv};
 		\end{axis}
 	\end{tikzpicture}
 	\caption{$T_{pdr}$ to $\mathrm{C}_{inv}$}

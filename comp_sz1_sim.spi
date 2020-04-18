@@ -1,0 +1,46 @@
+*** SPICE deck for cell comp_sz1_sim{lay} from library folded
+*** Created on Sat Apr 18, 2020 20:57:59
+*** Last revised on Sat Apr 18, 2020 20:58:56
+*** Written on Sat Apr 18, 2020 20:59:13 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+*** WARNING: no ground connection for N-transistor wells in cell 'comp_sz1{lay}'
+
+*** SUBCIRCUIT folded__comp_sz1 FROM CELL comp_sz1{lay}
+.SUBCKT folded__comp_sz1 GND OUT vdd W X Y Z
+Mnmos@0 net@53 X GND gnd NMOS L=0.36U W=0.9U AS=3.402P AD=0.365P PS=10.26U PD=1.89U
+Mnmos@1 OUT Y net@53 gnd N L=0.36U W=0.9U AS=0.365P AD=0.713P PS=1.89U PD=2.76U
+Mnmos@2 net@57 W OUT gnd N L=0.36U W=0.9U AS=0.713P AD=0.365P PS=2.76U PD=1.89U
+Mnmos@3 GND Z net@57 gnd N L=0.36U W=0.9U AS=0.365P AD=3.402P PS=1.89U PD=10.26U
+Mpmos@0 vdd X net@3 vdd PMOS L=0.36U W=1.08U AS=0.705P AD=3.702P PS=2.655U PD=9.54U
+Mpmos@1 net@3 X vdd vdd P L=0.36U W=1.08U AS=3.702P AD=0.705P PS=9.54U PD=2.655U
+Mpmos@3 vdd Y net@3 vdd P L=0.36U W=1.08U AS=0.705P AD=3.702P PS=2.655U PD=9.54U
+Mpmos@4 net@3 Y vdd vdd P L=0.36U W=1.08U AS=3.702P AD=0.705P PS=9.54U PD=2.655U
+Mpmos@10 net@3 W OUT vdd P L=0.36U W=1.08U AS=0.713P AD=0.705P PS=2.76U PD=2.655U
+Mpmos@11 OUT W net@3 vdd P L=0.36U W=1.08U AS=0.705P AD=0.713P PS=2.655U PD=2.76U
+Mpmos@13 net@3 Z OUT vdd P L=0.36U W=1.08U AS=0.713P AD=0.705P PS=2.76U PD=2.655U
+Mpmos@14 OUT Z net@3 vdd P L=0.36U W=1.08U AS=0.705P AD=0.713P PS=2.655U PD=2.76U
+.ENDS folded__comp_sz1
+
+*** TOP LEVEL CELL: comp_sz1_sim{lay}
+Xcomp_sz1@0 GND OUT VDD W X Y Z folded__comp_sz1
+
+* Spice Code nodes in cell cell 'comp_sz1_sim{lay}'
+.param transsi=1333.33p
+vdd VDD 0 DC 3.3
+vw W 0 pulse 3.3 0 1u {transsi} {transsi} 2u 4u
+vx X 0 DC 3.3
+vy Y 0 DC 0
+vz Z 0 DC 3.3
+*vx X 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vy Y 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vz Z 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+cload OUT 0 16.2fF
+.tran 0 10u
+.measure tdpr trig v(W) val=1.65 fall =1 TARG v(OUT) val=1.65 rise=1
+.measure tdpf trig v(W) val=1.65 rise =1 TARG v(OUT) val=1.65 fall=1
+.measure trise trig v(OUT) val=0.66 rise =1 TARG v(OUT) val=2.64 rise=1
+.measure tfall trig v(OUT) val=2.64 fall =1 TARG v(OUT) val=0.66 fall=1
+.include '/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/scmos18(2).txt'
+.END
+.END

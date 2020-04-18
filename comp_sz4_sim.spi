@@ -61,7 +61,7 @@ Mpmos@41 OUT Z net@3 vdd P L=0.36U W=1.08U AS=0.614P AD=0.591P PS=2.284U PD=2.26
 Xcomp_sz4@0 GND OUT VDD W X Y Z folded__comp_sz4
 
 * Spice Code nodes in cell cell 'comp_sz4_sim{lay}'
-.param transsi=0p
+.param transsi=666.66p
 vdd VDD 0 DC 3.3
 vw W 0 pulse 3.3 0 1u {transsi} {transsi} 2u 4u
 vx X 0 DC 3.3
@@ -70,7 +70,7 @@ vz Z 0 DC 3.3
 *vx X 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
 *vy Y 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
 *vz Z 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
-cload OUT 0 26.58fF
+cload OUT 0 16.2fF
 .tran 0 10u
 .measure tdpr trig v(W) val=1.65 fall =1 TARG v(OUT) val=1.65 rise=1
 .measure tdpf trig v(W) val=1.65 rise =1 TARG v(OUT) val=1.65 fall=1

@@ -236,7 +236,7 @@ EZ||D5G2;|contact@20||I
 X
 
 # Cell comp_sz2;1{lay}
-Ccomp_sz2;1{lay}||mocmos|1587178495643|1587183725216||DRC_last_good_drc_area_date()G1587183701880|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1587183701880
+Ccomp_sz2;1{lay}||mocmos|1587178495643|1587235144596||DRC_last_good_drc_area_date()G1587183701880|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1587235128463
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-1-P-Active-Con|contact@0||-45|2.5||1||
 NMetal-1-P-Active-Con|contact@1||-53|2.5||1||
@@ -313,6 +313,8 @@ NPolysilicon-1-Pin|pin@55||-13|-14.5||||
 NPolysilicon-1-Pin|pin@56||-13|-2.5||||
 NPolysilicon-1-Pin|pin@57||-41|-14.5||||
 NPolysilicon-1-Pin|pin@58||42|-14.5||||
+NPolysilicon-1-Pin|pin@59||14|-14.5||||
+NPolysilicon-1-Pin|pin@60||14|-2.5||||
 NP-Transistor|pmos@0||-49|2.5|3||R|
 NP-Transistor|pmos@1||-41|2.5|3||R|
 NP-Transistor|pmos@2||-33|2.5|3||R|
@@ -443,8 +445,6 @@ APolysilicon-1|net@194|||S0|pin@12||-33|11.5|contact@42||-76|11.5
 AMetal-1|net@199||1|S2700|contact@21||-5|2.5|pin@52||-5|10
 AMetal-1|net@200||1|S1800|pin@52||-5|10|pin@43||14|10
 APolysilicon-1|net@204|||S0|nmos@4|poly-right|-33|-14.5|contact@41||-54|-14.5
-APolysilicon-1|net@207|||S1800|nmos@11|poly-right|10|-14.5|nmos@12|poly-right|18|-14.5
-APolysilicon-1|net@208|||S0|pmos@12|poly-left|18|-2.5|pmos@13|poly-left|10|-2.5
 APolysilicon-1|net@209|||S1800|nmos@14|poly-right|34|-14.5|contact@16||52|-14.5
 AMetal-1|net@210||1|S1800|pin@30||-13|-12|pin@38||14|-12
 AMetal-1|net@211||1|S1800|pin@17||6|-5|pin@54||14|-5
@@ -459,6 +459,11 @@ APolysilicon-1|net@219|||S0|nmos@4|poly-right|-33|-14.5|pin@57||-41|-14.5
 APolysilicon-1|net@220|||S900|pmos@1|poly-left|-41|-2.5|pin@57||-41|-14.5
 APolysilicon-1|net@221|||S1800|nmos@14|poly-right|34|-14.5|pin@58||42|-14.5
 APolysilicon-1|net@222|||S900|pmos@6|poly-left|42|-2.5|pin@58||42|-14.5
+APolysilicon-1|net@223|||S1800|nmos@11|poly-right|10|-14.5|pin@59||14|-14.5
+APolysilicon-1|net@224|||S1800|pin@59||14|-14.5|nmos@12|poly-right|18|-14.5
+APolysilicon-1|net@225|||S0|pmos@12|poly-left|18|-2.5|pin@60||14|-2.5
+APolysilicon-1|net@226|||S0|pin@60||14|-2.5|pmos@13|poly-left|10|-2.5
+APolysilicon-1|net@227|||S2700|pin@59||14|-14.5|pin@60||14|-2.5
 EGND||D5G2;|contact@40||G
 EOUT||D5G2;|pin@18||O
 EVDD||D5G2;|contact@3||P
@@ -466,6 +471,27 @@ EW||D5G2;|contact@43||I
 EX||D5G2;|contact@41||I
 EY||D5G2;|contact@42||I
 EZ||D5G2;|contact@16||I
+X
+
+# Cell comp_sz2_sim;1{lay}
+Ccomp_sz2_sim;1{lay}||mocmos|1587234926058|1587235086715||DRC_last_good_drc_area_date()G1587235128463|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1587235128463
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Icomp_sz2;1{lay}|comp_sz2@0||-1.5|7.5|||D5G4;
+Ngeneric:Invisible-Pin|pin@0||-77|-51.5|||||SIM_spice_card(D5G1;)S[.param transsi=166.66p,vdd VDD 0 DC 3.3,vw W 0 pulse 3.3 0 1u {transsi} {transsi} 2u 4u,vx X 0 DC 3.3,vy Y 0 DC 0,vz Z 0 DC 3.3,*vx X 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u,*vy Y 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u,*vz Z 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u,cload OUT 0 26.58fF,.tran 0 10u,.measure tdpr trig v(W) val=1.65 fall =1 TARG v(OUT) val=1.65 rise=1,.measure tdpf trig v(W) val=1.65 rise =1 TARG v(OUT) val=1.65 fall=1,.measure trise trig v(OUT) val=0.66 rise =1 TARG v(OUT) val=2.64 rise=1,.measure tfall trig v(OUT) val=2.64 fall =1 TARG v(OUT) val=0.66 fall=1,.include '/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/scmos18(2).txt',.END]
+NMetal-1-Pin|pin@1||-5|-54||||
+NMetal-1-Pin|pin@2||50.5|-44.5||||
+NMetal-1-Pin|pin@3||92|2.5||||
+NMetal-1-Pin|pin@4||94|19||||
+NMetal-1-Pin|pin@5||-1|40.5||||
+NMetal-1-Pin|pin@6||-94.5|19||||
+NMetal-1-Pin|pin@7||-90|-7||||
+AMetal-1|GND|D5G1;|1|S900|comp_sz2@0|GND|-5|-27.5|pin@1||-5|-54
+AMetal-1|OUT|D5G1;|1|S1800|comp_sz2@0|OUT|68.5|2.5|pin@3||92|2.5
+AMetal-1|VDD|D5G1;|1|S2700|comp_sz2@0|VDD|-1|24.5|pin@5||-1|40.5
+AMetal-1|W|D5G1;|1|S1800|comp_sz2@0|W|75.5|19|pin@4||94|19
+AMetal-1|X|D5G1;|1|S0|comp_sz2@0|X|-55.5|-7|pin@7||-90|-7
+AMetal-1|Y|D5G1;|1|S0|comp_sz2@0|Y|-77.5|19|pin@6||-94.5|19
+AMetal-1|Z|D5G1;|1|S900|comp_sz2@0|Z|50.5|-7|pin@2||50.5|-44.5
 X
 
 # Cell comp_sz4;1{lay}
@@ -879,8 +905,29 @@ EY||D5G2;|contact@32||I
 EZ||D5G2;|contact@11||I
 X
 
+# Cell comp_sz4_sim;1{lay}
+Ccomp_sz4_sim;1{lay}||mocmos|1587231259846|1587231555980|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Icomp_sz4;1{lay}|comp_sz4@0||40|4.5|||D5G4;
+NMetal-1-Pin|pin@0||1.5|-41||||
+NMetal-1-Pin|pin@1||-81.5|-35.5||||
+NMetal-1-Pin|pin@2||-150|25.5||||
+NMetal-1-Pin|pin@3||1.5|47.5||||
+NMetal-1-Pin|pin@4||150|9||||
+NMetal-1-Pin|pin@5||85.5|-35||||
+NMetal-1-Pin|pin@6||154.5|25.5||||
+Ngeneric:Invisible-Pin|pin@7||2.5|-58.5|||||SIM_spice_card(D5G1;)S[.param transsi=166.66p,vdd VDD 0 DC 3.3,vw W 0 pulse 3.3 0 1u {transsi} {transsi} 2u 4u,vx X 0 DC 3.3,vy Y 0 DC 0,vz Z 0 DC 3.3,*vx X 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u,*vy Y 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u,*vz Z 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u,cload OUT 0 26.58fF,.tran 0 10u,.measure tdpr trig v(W) val=1.65 fall =1 TARG v(OUT) val=1.65 rise=1,.measure tdpf trig v(W) val=1.65 rise =1 TARG v(OUT) val=1.65 fall=1,.measure trise trig v(OUT) val=0.66 rise =1 TARG v(OUT) val=2.64 rise=1,.measure tfall trig v(OUT) val=2.64 fall =1 TARG v(OUT) val=0.66 fall=1,.include '/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/scmos18(2).txt',.END]
+AMetal-1|GND|D5G1;|1|S900|comp_sz4@0|GND|1.5|-19.5|pin@0||1.5|-41
+AMetal-1|OUT|D5G1;|1|S1800|comp_sz4@0|OUT|135|9|pin@4||150|9
+AMetal-1|VDD|D5G1;|1|S2700|comp_sz4@0|VDD|1.5|31|pin@3||1.5|47.5
+AMetal-1|W|D5G1;|1|S1800|comp_sz4@0|W|142|25.5|pin@6||154.5|25.5
+AMetal-1|X|D5G1;|1|S900|comp_sz4@0|X|-81.5|-0.5|pin@1||-81.5|-35.5
+AMetal-1|Y|D5G1;|1|S0|comp_sz4@0|Y|-139|25.5|pin@2||-150|25.5
+AMetal-1|Z|D5G1;|1|S900|comp_sz4@0|Z|85.5|-0.5|pin@5||85.5|-35
+X
+
 # Cell comp_sz8;1{lay}
-Ccomp_sz8;1{lay}||mocmos|1587186091373|1587187231033||DRC_last_good_drc_area_date()G1587187211084|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1587187211084
+Ccomp_sz8;1{lay}||mocmos|1587186091373|1587187231033||DRC_last_good_drc_area_date()G1587187211084|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1587214413722
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-1-P-Active-Con|contact@0||-177.5|12.5||1||
 NMetal-1-P-Active-Con|contact@1||-185.5|12.5||1||
@@ -1655,4 +1702,25 @@ EW||D5G2;|contact@23||I
 EX||D5G2;|contact@21||I
 EY||D5G2;|contact@22||I
 EZ||D5G2;|contact@6||I
+X
+
+# Cell comp_sz8_sim;1{lay}
+Ccomp_sz8_sim;1{lay}||mocmos|1587214377390|1587231561971||DRC_last_good_drc_area_date()G1587214430125|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1587214430125
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Icomp_sz8;1{lay}|comp_sz8@0||15|41|||D5G4;
+NMetal-1-Pin|pin@0||-21|-24.5||||
+NMetal-1-Pin|pin@1||-166.5|-28||||
+NMetal-1-Pin|pin@2||-289.5|88||||
+NMetal-1-Pin|pin@4||125|-12.5||||
+NMetal-1-Pin|pin@5||271|62.5||||
+NMetal-1-Pin|pin@6||274|46||||
+NMetal-1-Pin|pin@8||-22.5|118.5||||
+Ngeneric:Invisible-Pin|pin@9||-35.5|-52|||||SIM_spice_card(D5G1;)S[.param transsi=166.66p,vdd VDD 0 DC 3.3,vw W 0 pulse 3.3 0 1u {transsi} {transsi} 2u 4u,vx X 0 DC 3.3,vy Y 0 DC 0,vz Z 0 DC 3.3,*vx X 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u,*vy Y 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u,*vz Z 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u,cload OUT 0 26.58fF,.tran 0 10u,.measure tdpr trig v(W) val=1.65 fall =1 TARG v(OUT) val=1.65 rise=1,.measure tdpf trig v(W) val=1.65 rise =1 TARG v(OUT) val=1.65 fall=1,.measure trise trig v(OUT) val=0.66 rise =1 TARG v(OUT) val=2.64 rise=1,.measure tfall trig v(OUT) val=2.64 fall =1 TARG v(OUT) val=0.66 fall=1,.include '/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/scmos18(2).txt',.END]
+AMetal-1|GND|D5G1;|1|S900|comp_sz8@0|GND|-21|17|pin@0||-21|-24.5
+AMetal-1|OUT|D5G1;|1|S1800|comp_sz8@0|OUT|237.5|46|pin@6||274|46
+AMetal-1|VDD|D5G1;|1|S2700|comp_sz8@0|VDD|-22.5|68|pin@8||-22.5|118.5
+AMetal-1|W|D5G1;|1|S1800|comp_sz8@0|W|244.5|62.5|pin@5||271|62.5
+AMetal-1|X|D5G1;|1|S900|comp_sz8@0|X|-166.5|36.5|pin@1||-166.5|-28
+AMetal-1|Y|D5G1;|1|S2700|comp_sz8@0|Y|-289.5|62.5|pin@2||-289.5|88
+AMetal-1|Z|D5G1;|1|S900|comp_sz8@0|Z|125|36.5|pin@4||125|-12.5
 X

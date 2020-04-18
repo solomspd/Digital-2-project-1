@@ -1,0 +1,57 @@
+*** SPICE deck for cell comp_sz2_sim{lay} from library folded
+*** Created on Sat Apr 18, 2020 20:35:26
+*** Last revised on Sat Apr 18, 2020 20:38:06
+*** Written on Sat Apr 18, 2020 20:39:24 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT folded__comp_sz2 FROM CELL comp_sz2{lay}
+.SUBCKT folded__comp_sz2 gnd OUT vdd W X Y Z
+Mnmos@4 gnd X net@98 gnd NMOS L=0.36U W=0.9U AS=0.689P AD=4.536P PS=2.88U PD=11.43U
+Mnmos@5 net@98 X gnd gnd N L=0.36U W=0.9U AS=4.536P AD=0.689P PS=11.43U PD=2.88U
+Mnmos@8 OUT Y net@98 gnd N L=0.36U W=0.9U AS=0.689P AD=0.632P PS=2.88U PD=2.43U
+Mnmos@9 net@98 Y OUT gnd N L=0.36U W=0.9U AS=0.632P AD=0.689P PS=2.43U PD=2.88U
+Mnmos@11 OUT W net@130 gnd N L=0.36U W=0.9U AS=0.689P AD=0.632P PS=2.88U PD=2.43U
+Mnmos@12 net@130 W OUT gnd N L=0.36U W=0.9U AS=0.632P AD=0.689P PS=2.43U PD=2.88U
+Mnmos@13 gnd Z net@130 gnd N L=0.36U W=0.9U AS=0.689P AD=4.536P PS=2.88U PD=11.43U
+Mnmos@14 net@130 Z gnd gnd N L=0.36U W=0.9U AS=4.536P AD=0.689P PS=11.43U PD=2.88U
+Mpmos@0 vdd X net@2 vdd P L=0.36U W=1.08U AS=0.644P AD=3.499P PS=2.407U PD=8.865U
+Mpmos@1 net@2 X vdd vdd P L=0.36U W=1.08U AS=3.499P AD=0.644P PS=8.865U PD=2.407U
+Mpmos@2 vdd Y net@2 vdd P L=0.36U W=1.08U AS=0.644P AD=3.499P PS=2.407U PD=8.865U
+Mpmos@3 net@2 Y vdd vdd P L=0.36U W=1.08U AS=3.499P AD=0.644P PS=8.865U PD=2.407U
+Mpmos@4 net@2 W OUT vdd P L=0.36U W=1.08U AS=0.632P AD=0.644P PS=2.43U PD=2.407U
+Mpmos@5 OUT W net@2 vdd P L=0.36U W=1.08U AS=0.644P AD=0.632P PS=2.407U PD=2.43U
+Mpmos@6 net@2 Z OUT vdd P L=0.36U W=1.08U AS=0.632P AD=0.644P PS=2.43U PD=2.407U
+Mpmos@7 OUT Z net@2 vdd P L=0.36U W=1.08U AS=0.644P AD=0.632P PS=2.407U PD=2.43U
+Mpmos@8 net@2 X vdd vdd P L=0.36U W=1.08U AS=3.499P AD=0.644P PS=8.865U PD=2.407U
+Mpmos@9 vdd X net@2 vdd PMOS L=0.36U W=1.08U AS=0.644P AD=3.499P PS=2.407U PD=8.865U
+Mpmos@10 vdd Y net@2 vdd P L=0.36U W=1.08U AS=0.644P AD=3.499P PS=2.407U PD=8.865U
+Mpmos@11 net@2 Y vdd vdd P L=0.36U W=1.08U AS=3.499P AD=0.644P PS=8.865U PD=2.407U
+Mpmos@12 OUT W net@2 vdd P L=0.36U W=1.08U AS=0.644P AD=0.632P PS=2.407U PD=2.43U
+Mpmos@13 net@2 W OUT vdd P L=0.36U W=1.08U AS=0.632P AD=0.644P PS=2.43U PD=2.407U
+Mpmos@14 net@2 Z OUT vdd P L=0.36U W=1.08U AS=0.632P AD=0.644P PS=2.43U PD=2.407U
+Mpmos@15 OUT Z net@2 vdd P L=0.36U W=1.08U AS=0.644P AD=0.632P PS=2.407U PD=2.43U
+.ENDS folded__comp_sz2
+
+*** TOP LEVEL CELL: comp_sz2_sim{lay}
+Xcomp_sz2@0 GND OUT VDD W X Y Z folded__comp_sz2
+
+* Spice Code nodes in cell cell 'comp_sz2_sim{lay}'
+.param transsi=1333.33p
+vdd VDD 0 DC 3.3
+vw W 0 pulse 3.3 0 1u {transsi} {transsi} 2u 4u
+vx X 0 DC 3.3
+vy Y 0 DC 0
+vz Z 0 DC 3.3
+*vx X 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vy Y 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vz Z 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+cload OUT 0 16.2fF
+.tran 0 10u
+.measure tdpr trig v(W) val=1.65 fall =1 TARG v(OUT) val=1.65 rise=1
+.measure tdpf trig v(W) val=1.65 rise =1 TARG v(OUT) val=1.65 fall=1
+.measure trise trig v(OUT) val=0.66 rise =1 TARG v(OUT) val=2.64 rise=1
+.measure tfall trig v(OUT) val=2.64 fall =1 TARG v(OUT) val=0.66 fall=1
+.include '/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/scmos18(2).txt'
+.END
+.END

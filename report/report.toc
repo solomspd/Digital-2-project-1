@@ -14,5 +14,5 @@
 \contentsline {subsection}{\numberline {6.2}Stick diagram}{7}% 
 \contentsline {subsection}{\numberline {6.3}Layout}{7}% 
 \contentsline {subsection}{\numberline {6.4}Transition time}{7}% 
-\contentsline {subsection}{\numberline {6.5}Data collection}{7}% 
-\contentsline {subsection}{\numberline {6.6}Minimum cell height}{7}% 
+\contentsline {subsection}{\numberline {6.5}Data collection}{8}% 
+\contentsline {subsection}{\numberline {6.6}Minimum cell height}{8}% 
