@@ -1,0 +1,129 @@
+*** SPICE deck for cell comp_sz8_sim{lay} from library folded
+*** Created on Sat Apr 18, 2020 14:52:57
+*** Last revised on Sat Apr 18, 2020 14:59:02
+*** Written on Sat Apr 18, 2020 14:59:14 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT folded__comp_sz8 FROM CELL comp_sz8{lay}
+.SUBCKT folded__comp_sz8 gnd OUT vdd W X Y Z
+Mnmos@0 gnd X net@3 gnd N L=0.36U W=0.9U AS=0.537P AD=3.321P PS=2.205U PD=8.393U
+Mnmos@1 net@3 X gnd gnd N L=0.36U W=0.9U AS=3.321P AD=0.537P PS=8.393U PD=2.205U
+Mnmos@2 OUT Y net@3 gnd N L=0.36U W=0.9U AS=0.537P AD=0.571P PS=2.205U PD=2.183U
+Mnmos@3 net@3 Y OUT gnd N L=0.36U W=0.9U AS=0.571P AD=0.537P PS=2.183U PD=2.205U
+Mnmos@4 OUT W net@166 gnd N L=0.36U W=0.9U AS=0.547P AD=0.571P PS=2.228U PD=2.183U
+Mnmos@5 net@166 W OUT gnd N L=0.36U W=0.9U AS=0.571P AD=0.547P PS=2.183U PD=2.228U
+Mnmos@6 gnd Z net@166 gnd N L=0.36U W=0.9U AS=0.547P AD=3.321P PS=2.228U PD=8.393U
+Mnmos@7 net@166 Z gnd gnd N L=0.36U W=0.9U AS=3.321P AD=0.547P PS=8.393U PD=2.228U
+Mnmos@8 net@3 X gnd gnd N L=0.36U W=0.9U AS=3.321P AD=0.537P PS=8.393U PD=2.205U
+Mnmos@9 gnd X net@3 gnd N L=0.36U W=0.9U AS=0.537P AD=3.321P PS=2.205U PD=8.393U
+Mnmos@10 OUT Y net@3 gnd N L=0.36U W=0.9U AS=0.537P AD=0.571P PS=2.205U PD=2.183U
+Mnmos@11 net@3 Y OUT gnd N L=0.36U W=0.9U AS=0.571P AD=0.537P PS=2.183U PD=2.205U
+Mnmos@12 OUT W net@166 gnd N L=0.36U W=0.9U AS=0.547P AD=0.571P PS=2.228U PD=2.183U
+Mnmos@13 net@166 W OUT gnd N L=0.36U W=0.9U AS=0.571P AD=0.547P PS=2.183U PD=2.228U
+Mnmos@14 gnd Z net@166 gnd N L=0.36U W=0.9U AS=0.547P AD=3.321P PS=2.228U PD=8.393U
+Mnmos@15 net@166 Z gnd gnd N L=0.36U W=0.9U AS=3.321P AD=0.547P PS=8.393U PD=2.228U
+Mnmos@16 gnd X net@3 gnd N L=0.36U W=0.9U AS=0.537P AD=3.321P PS=2.205U PD=8.393U
+Mnmos@17 net@3 X gnd gnd N L=0.36U W=0.9U AS=3.321P AD=0.537P PS=8.393U PD=2.205U
+Mnmos@18 net@3 X gnd gnd N L=0.36U W=0.9U AS=3.321P AD=0.537P PS=8.393U PD=2.205U
+Mnmos@19 gnd X net@3 gnd N L=0.36U W=0.9U AS=0.537P AD=3.321P PS=2.205U PD=8.393U
+Mnmos@20 OUT Y net@3 gnd N L=0.36U W=0.9U AS=0.537P AD=0.571P PS=2.205U PD=2.183U
+Mnmos@21 net@3 Y OUT gnd N L=0.36U W=0.9U AS=0.571P AD=0.537P PS=2.183U PD=2.205U
+Mnmos@22 OUT Y net@3 gnd N L=0.36U W=0.9U AS=0.537P AD=0.571P PS=2.205U PD=2.183U
+Mnmos@23 net@3 Y OUT gnd N L=0.36U W=0.9U AS=0.571P AD=0.537P PS=2.183U PD=2.205U
+Mnmos@24 OUT W net@166 gnd N L=0.36U W=0.9U AS=0.547P AD=0.571P PS=2.228U PD=2.183U
+Mnmos@25 net@166 W OUT gnd N L=0.36U W=0.9U AS=0.571P AD=0.547P PS=2.183U PD=2.228U
+Mnmos@26 OUT W net@166 gnd N L=0.36U W=0.9U AS=0.547P AD=0.571P PS=2.228U PD=2.183U
+Mnmos@27 net@166 W OUT gnd N L=0.36U W=0.9U AS=0.571P AD=0.547P PS=2.183U PD=2.228U
+Mnmos@28 gnd Z net@166 gnd N L=0.36U W=0.9U AS=0.547P AD=3.321P PS=2.228U PD=8.393U
+Mnmos@29 net@166 Z gnd gnd N L=0.36U W=0.9U AS=3.321P AD=0.547P PS=8.393U PD=2.228U
+Mnmos@30 gnd Z net@166 gnd N L=0.36U W=0.9U AS=0.547P AD=3.321P PS=2.228U PD=8.393U
+Mnmos@31 net@166 Z gnd gnd N L=0.36U W=0.9U AS=3.321P AD=0.547P PS=8.393U PD=2.228U
+Mpmos@0 vdd X net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@1 net@0 X vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@2 vdd Y net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@3 net@0 Y vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@4 net@0 X vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@5 vdd X net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@6 vdd Y net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@7 net@0 Y vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@8 net@0 X vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@9 vdd X net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@10 net@0 X vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@11 vdd X net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@12 vdd Y net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@13 net@0 Y vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@14 vdd Y net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@15 net@0 Y vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@32 vdd X net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@33 net@0 X vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@34 net@0 X vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@35 vdd X net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@36 net@0 X vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@37 vdd X net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@38 net@0 X vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@39 vdd X net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@40 vdd Y net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@41 net@0 Y vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@42 vdd Y net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@43 net@0 Y vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@44 vdd Y net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@45 net@0 Y vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@46 vdd Y net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=3.241P PS=2.222U PD=8.123U
+Mpmos@47 net@0 Y vdd vdd P L=0.36U W=1.08U AS=3.241P AD=0.598P PS=8.123U PD=2.222U
+Mpmos@48 net@0 W OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@49 OUT W net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@50 net@0 Z OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@51 OUT Z net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@52 OUT W net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@53 net@0 W OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@54 net@0 Z OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@55 OUT Z net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@56 OUT W net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@57 net@0 W OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@58 OUT W net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@59 net@0 W OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@60 net@0 Z OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@61 OUT Z net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@62 net@0 Z OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@63 OUT Z net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@64 net@0 W OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@65 OUT W net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@66 OUT W net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@67 net@0 W OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@68 OUT W net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@69 net@0 W OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@70 OUT W net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@71 net@0 W OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@72 net@0 Z OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@73 OUT Z net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@74 net@0 Z OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@75 OUT Z net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@76 net@0 Z OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@77 OUT Z net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+Mpmos@78 net@0 Z OUT vdd P L=0.36U W=1.08U AS=0.571P AD=0.598P PS=2.183U PD=2.222U
+Mpmos@79 OUT Z net@0 vdd P L=0.36U W=1.08U AS=0.598P AD=0.571P PS=2.222U PD=2.183U
+.ENDS folded__comp_sz8
+
+*** TOP LEVEL CELL: comp_sz8_sim{lay}
+Xcomp_sz8@0 GND OUT VDD W X Y Z folded__comp_sz8
+
+* Spice Code nodes in cell cell 'comp_sz8_sim{lay}'
+.param transsi=166.66p
+vdd VDD 0 DC 3.3
+vw W 0 pulse 3.3 0 1u {transsi} {transsi} 2u 4u
+vx X 0 DC 3.3
+vy Y 0 DC 0
+vz Z 0 DC 3.3
+*vx X 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vy Y 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+*vz Z 0 pulse 3.3 0 0 {transsi} {transsi} 0u 10u
+cload OUT 0 26.58fF
+.tran 0 10u
+.measure tdpr trig v(W) val=1.65 fall =1 TARG v(OUT) val=1.65 rise=1
+.measure tdpf trig v(W) val=1.65 rise =1 TARG v(OUT) val=1.65 fall=1
+.measure trise trig v(OUT) val=0.66 rise =1 TARG v(OUT) val=2.64 rise=1
+.measure tfall trig v(OUT) val=2.64 fall =1 TARG v(OUT) val=0.66 fall=1
+.include '/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/scmos18(2).txt'
+.END
+.END

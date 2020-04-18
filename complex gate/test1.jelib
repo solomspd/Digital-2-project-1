@@ -44,7 +44,7 @@ EZ||D5G2;X-1;|pin@12||I
 X
 
 # Cell comp;1{lay}
-Ccomp;1{lay}||mocmos|1586058905792|1586839689221||DRC_last_good_drc_area_date()G1586839721543|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1586839721543
+Ccomp;1{lay}||mocmos|1586058905792|1587167042451||DRC_last_good_drc_area_date()G1587167042786|DRC_last_good_drc_bit()I18|DRC_last_good_drc_date()G1587167042786
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NMetal-1-P-Active-Con|contact@0||-9|10||6||
 NMetal-1-P-Active-Con|contact@1||-17|10||6||
@@ -74,6 +74,8 @@ NMetal-1-Pin|pin@5||23|0||||
 NPolysilicon-1-Pin|pin@7||11|21.5||||
 NPolysilicon-1-Pin|pin@8||30|-5.5||||
 NPolysilicon-1-Pin|pin@9||-5|21.5||||
+NMetal-1-Pin|pin@10||-17|0||||
+NMetal-1-Pin|pin@11||-1|0||||
 NP-Transistor|pmos@1||-5|10|8||R|
 NP-Transistor|pmos@2||11|10|8||R|
 NP-Transistor|pmos@3||19|10|8||R||SIM_spice_model(D5FSansSerif;G1;Y-12;)SPMOS
@@ -116,6 +118,9 @@ APolysilicon-1|net@58|||S1800|nmos@3|poly-right|19|-5.5|pin@8||30|-5.5
 APolysilicon-1|net@59|||S900|pin@8||30|-5.5|contact@13||30|-12
 APolysilicon-1|net@60|||S2700|pmos@1|poly-right|-5|17.5|pin@9||-5|21.5
 APolysilicon-1|net@61|||S0|pin@9||-5|21.5|contact@12||-24|21.5
+AMetal-1|net@62||1|S900|contact@1||-17|10|pin@10||-17|0
+AMetal-1|net@63||1|S900|contact@4||-1|10|pin@11||-1|0
+AMetal-1|net@64||1|S1800|pin@10||-17|0|pin@11||-1|0
 EF||D5G2;|pin@5||I
 EGND||D5G2;|contact@10||G
 EVDD||D5G2;|contact@11||P
@@ -343,6 +348,11 @@ AMetal-1|W|D5G1;|1|S1800|comp_sz2@1|W|6.5|36.5|pin@9||16.5|36.5
 AMetal-1|X|D5G1;|1|S0|comp_sz2@1|X|-48.5|-1.5|pin@17||-62.5|-1.5
 AMetal-1|Y|D5G1;|1|S0|comp_sz2@1|Y|-47.5|37.5|pin@19||-66.5|37.5
 AMetal-1|Z|D5G1;|1|S1800|comp_sz2@1|Z|6.5|-8|pin@16||24.5|-8
+X
+
+# Cell comp_sz4;2{lay}
+Ccomp_sz4;2{lay}||mocmos|1587182763175|1587182763175|
+Ngeneric:Facet-Center|art@0||0|0||||AV
 X
 
 # Cell comp_sz4;1{lay}

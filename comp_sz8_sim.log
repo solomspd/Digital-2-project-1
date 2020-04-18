@@ -1,0 +1,36 @@
+Circuit: *** SPICE deck for cell comp_sz8_sim{lay} from library folded
+
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Direct Newton iteration for .op point succeeded.
+
+tdpr=9.41214e-011 FROM 1.00008e-006 TO 1.00018e-006
+tdpf=9.22942e-011 FROM 3.00025e-006 TO 3.00034e-006
+trise=9.73098e-011 FROM 1.00014e-006 TO 1.00024e-006
+tfall=7.19015e-011 FROM 3.00031e-006 TO 3.00038e-006
+
+
+Date: Sat Apr 18 15:00:37 2020
+Total elapsed time: 0.242 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2922
+traniter = 2914
+tranpoints = 1375
+accept = 1300
+rejected = 75
+matrix size = 14
+fillins = 0
+solver = Normal
+Thread vector: 76.3/22.9[8] 19.2/5.7[8] 4.0/2.4[6] 0.1/1.2[1]  2592/500
+Matrix Compiler1: 636 bytes object code size  0.3/0.2/[0.1]
+Matrix Compiler2: 1.29 KB object code size  0.3/0.4/[0.3]
+
