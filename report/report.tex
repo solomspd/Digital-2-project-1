@@ -34,6 +34,45 @@
 
 \subsection{Schematic}
 
+\begin{figure}[H]
+	\centering
+	\begin{circuitikz}
+		\draw
+		(0,0) node[nmos] (nx) {}
+		(nx.G) node[left] {$x$}
+		(2,0) node[nmos] (nw) {}
+		(nw.G) node[left] {$w$}
+		(nx.S) to (nw.S)
+		(nx.D) node[nmos,anchor=S] (ny) {}
+		(ny.G) node[left] {$y$}
+		(nw.D) node[nmos,anchor=S] (nz) {}
+		(nz.G) node[left] {$z$}
+		(ny.D) to (nz.D)
+		($(ny.D)!0.5!(nz.D)$) node (nend) {}
+		($(nend)+(0,1)$) node (pstart) {}
+		($(pstart)+(-1,0)$) node[pmos,anchor=D] (pw) {}
+		(pw.G) node[left] {$w$}
+		($(pstart)+(1,0)$) node[pmos,anchor=D] (pz) {}
+		(pz.G) node[left] {$z$}
+		(pw.D) to (pstart.center) to (pz.D)
+		(pw.S) to (pz.S)
+		($(pw.S)+(0,0.5)$) node[pmos,anchor=D] (px) {}
+		(px.G) node[left] {$x$}
+		($(px.D)+(2,0)$) node[pmos,anchor=D] (py) {}
+		(py.G) node[left] {$y$}
+		(px.D) to (py.D)
+		(px.S) to (py.S)
+		($(px.D)!0.5!(py.D)$) to ($(pz.S)!0.5!(pw.S)$)
+		(nend.center) to (pstart.center)
+		($(nend)!0.5!(pstart)$) -- ++(1,0) node[right] {$f$}
+		($(nx.S)!0.5!(nw.S)$) node[ground] {}
+		($(px.S)!0.5!(py.S)$) node[vdd] {$3.3\mathrm{V}$}
+		;
+	\end{circuitikz}
+	\caption{}
+	\label{}
+\end{figure}
+
 \subsection{Stick diagram}
 
 \subsection{Layout}
