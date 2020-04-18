@@ -6,12 +6,6 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 
-\usetikzlibrary{shapes.misc}
-
-\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
-%default radius will be 1pt. 
-cross/.default={10pt}}
-
 \author{Abdelsalam ElTamawy 900170376\\Emman\\Nada Badawy 900171975}
 \date{\today}
 \title{CSCE 3304 - Digital Design 2\\Project 1\\A small standard cell library\\}
@@ -29,12 +23,75 @@ cross/.default={10pt}}
 \section{Introduction}
 
 \section{Inverter}
+\subsection{Schematic}
 
+\begin{figure}[H]
+	\centering
+	\begin{circuitikz}
+		\draw
+		(0,0) node[nmos] (nx) {}
+		(nx.G) node[left] {$IN$}
+		($(ny.D)!0.5!(nz.D)$) node (nend) {}
+		($(nend)+(0,1)$) node (pstart) {}
+  
+	
+		($(pw.S)+(0,0.5)$) node[pmos,anchor=D] (px) {}
+		(px.G) node[left] {$IN$}
+
+		($(nend)!0.5!(pstart)$) -- ++(1,0) node[right] {$OUT$}
+		($(nx.S)!0.5!(nw.S)$) node[ground] {}
+		($(px.S)!0.5!(px.S)$) node[vdd] {$3.3\mathrm{V}$}
+		;
+	\end{circuitikz}
+	\caption{}
+	\label{}
+\end{figure}
+
+\subsection{Stick diagram}
+\subsection{Schematic}
 \section{Tri-state Inverter}
 
 \section{3 input NAND}
 
 \section{3 input NOR}
+	\begin{figure}[H]
+	\centering
+	\begin{circuitikz}
+		\draw
+		(0,0) node[nmos] (nx) {}
+		(nx.G) node[left] {$IN1$}
+		(2,0) node[nmos] (nw) {}
+		(nw.G) node[left] {$IN2$}
+		(4,0) node[nmos] (nin) {}
+		(nin.G) node[left] {$IN3$}
+		(nx.S) to (nw.S) to (nin.S)
+
+     	(nx.D) to (nw.D) to (nin.D)
+		($(nx.D)!0.5!(nw.D)$) node (nend) {}
+		($(nend)+(0,1)$) node (pstart) {}
+	
+	
+		($(nend)+(0,1)$) node[pmos,anchor=D] (pw) {}
+		(pw.G) node[left] {$IN3$}
+
+		(pw.D) to (pstart.center) 
+	
+		($(pw.S)+(0,0.5)$) node[pmos,anchor=D] (px) {}
+		(px.G) node[left] {$IN2$}
+		($(px.S)+(0,0.5)$) node[pmos,anchor=D] (pinn) {}
+		(pinn.G) node[left] {$IN1$}
+		(pw.S) to (px.D)
+			(pinn.D) to (px.S)
+
+		(nend.center) to (pstart.center)
+		($(nend)!0.5!(pstart)$) -- ++(1,0) node[right] {$f$}
+		($(nx.S)!0.5!(nw.S)$) node[ground] {}
+		($(pinn.S)$) node[vdd] {$3.3\mathrm{V}$}
+		;
+	\end{circuitikz}
+	\caption{}
+	\label{}
+\end{figure}
 
 \section{Complex function}
 
@@ -81,59 +138,23 @@ cross/.default={10pt}}
 
 \subsection{Stick diagram}
 
-\begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\draw[blue,thick]
-		(0,0) node[left,black] {$GND$} -- (12,0)
-		(1,0) -- (1,2) node[cross] {}
-		(10,0) -- (10,2) node[cross] {}
-		(0,6) node[left,black] {$VDD$} -- (12,6)
-		(6,2) node[cross] {} -- (6,4) node[cross] {}
-		(6,3) -- (10,3) -- (10,4) node[cross] {}
-		(10,3) -- (12,3) node[right,black] {$f$}
-		(1,4) node[cross] {} -- (1,3) -- (5,3) -- (5,4) node[cross] {} -- (5,5) -- (8,5) -- (8,4) node[cross] {}
-		(3,6) -- (3,4) node[cross] {}
-		;
-
-		\draw[red,thick]
-		(2,1) node[below,black] {$x$} -- ++ (0,4)
-		(4,1) node[below,black] {$y$} -- ++ (0,4)
-		(7,1) node[below,black] {$w$} -- ++ (0,4)
-		(9,1) node[below,black] {$z$} -- ++ (0,4)
-		;
-
-		\draw[yellow,thick]
-		(1,2) -- (10,2)
-		;
-
-		\draw[yellow,green]
-		(1,4) -- (5,4)
-		(6,4) -- (10,4)
-		;
-
-	\end{tikzpicture}
-	\caption{}
-	\label{}
-\end{figure}
-
 \subsection{Layout}
 
 \subsection{Transition time}
+
+\subsection{Data collection}
+
+\subsection{Minimum cell height}
 
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
 		\begin{axis} [ylabel=$T_{pdr}$,xlabel=$\mathrm{C}_{inv}$]
-			\addplot table [x=Cinv,y=tpdr,col sep = tab] {./data/complex/size1.csv};
+		\addplot table [x=Cinv,y=tpdr,col sep = tab] {./data/complex/size1.csv};
 		\end{axis}
 	\end{tikzpicture}
 	\caption{$T_{pdr}$ to $\mathrm{C}_{inv}$ under $100ns$ transition time}
 	\label{}
 \end{figure}
-
-\subsection{Data collection}
-
-\subsection{Minimum cell height}
 
 \end{document}
