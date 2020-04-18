@@ -36,9 +36,9 @@ cross/.default={10pt}}
 	\begin{circuitikz}
 		\draw
 		(0,0) node[nmos] (na) {}
-		(na.G) node[left] {$in$}
+		(na.G) node[left] {$a$}
 		(na.D) node[pmos,anchor=D] (pa) {}
-		(pa.G) node[left] {$in$}
+		(pa.G) node[left] {$a$}
 		(na.D) -- ++(1,0) node[right] {$f$}
 		(na.S) node[ground] {}
 		(pa.S) node[vdd] {$3.3$V}
@@ -60,11 +60,11 @@ cross/.default={10pt}}
 	\begin{circuitikz}
 		\draw
 		(0,0) node[nmos] (nx) {}
-		(nx.G) node[left] {$IN1$}
+		(nx.G) node[left] {$a$}
 		(2,0) node[nmos] (nw) {}
-		(nw.G) node[left] {$IN2$}
+		(nw.G) node[left] {$b$}
 		(4,0) node[nmos] (nin) {}
-		(nin.G) node[left] {$IN3$}
+		(nin.G) node[left] {$c$}
 		(nx.S) to (nw.S) to (nin.S)
 
      	(nx.D) to (nw.D) to (nin.D)
@@ -73,14 +73,14 @@ cross/.default={10pt}}
 	
 	
 		($(nend)+(0,0.5)$) node[pmos,anchor=D] (pw) {}
-		(pw.G) node[left] {$IN3$}
+		(pw.G) node[left] {$a$}
 
 		(pw.D) to (pstart.center) 
 	
 		($(pw.S)+(0,0)$) node[pmos,anchor=D] (px) {}
-		(px.G) node[left] {$IN2$}
+		(px.G) node[left] {$b$}
 		($(px.S)+(0,0)$) node[pmos,anchor=D] (pinn) {}
-		(pinn.G) node[left] {$IN1$}
+		(pinn.G) node[left] {$c$}
 		(pw.S) to (px.D)
 			(pinn.D) to (px.S)
 
