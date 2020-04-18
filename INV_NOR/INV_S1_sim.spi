@@ -1,0 +1,31 @@
+*** SPICE deck for cell INV_S1_sim{sch} from library INV
+*** Created on Fri Apr 03, 2020 19:33:57
+*** Last revised on Sat Apr 11, 2020 00:53:34
+*** Written on Sat Apr 11, 2020 00:53:58 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** SUBCIRCUIT INV__INV_S1 FROM CELL INV_S1{sch}
+.SUBCKT INV__INV_S1 IN OUT
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 OUT IN gnd gnd NMOS L=0.36U W=0.9U
+Mpmos@0 OUT IN vdd vdd PMOS L=0.36U W=1.98U
+.ENDS INV__INV_S1
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: INV_S1_sim{sch}
+XINV_S1@0 IN OUT INV__INV_S1
+
+* Spice Code nodes in cell cell 'INV_S1_sim{sch}'
+vdd vdd 0 DC 3.3
+vin IN 0 dc pulse 0 3.3 10n 0.00000001ps 0.00000001ps 10n
+.tran 0 100n
+.measure tpdr trig v(IN) val=1.67 fall=1 TARG v(OUT) val=1.67 rise=1
+.measure tpdf trig v(IN) val=1.67 rise=1 TARG v(OUT) val=1.67 fall=1
+.measure trise trig v(OUT) val=1 rise=1 TARG v(OUT) val=3.3 rise=1
+.measure tfall trig v(OUT) val=3.3 fall=1 TARG v(OUT) val=1 fall=1
+.include C:\Electric\scmos18.txt
+.END
+.END

@@ -1,0 +1,40 @@
+Circuit: *** SPICE deck for cell NOR3_S2_TR400{lay} from library NOR3
+
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Direct Newton iteration for .op point succeeded.
+
+tpdr_1=1.73442e-10 FROM 2.09965e-08 TO 2.11699e-08
+tpdf_1=3.20765e-10 FROM 1.03375e-08 TO 1.06583e-08
+tpdr_2=1.89959e-10 FROM 2.09965e-08 TO 2.11864e-08
+tpdf_2=3.36168e-10 FROM 1.03375e-08 TO 1.06737e-08
+tpdr_3=2.21891e-10 FROM 2.09965e-08 TO 2.12183e-08
+tpdf_3=3.65577e-10 FROM 1.03375e-08 TO 1.07031e-08
+tpdr_4=2.80903e-10 FROM 2.09965e-08 TO 2.12774e-08
+tpdf_4=4.24245e-10 FROM 1.03375e-08 TO 1.07618e-08
+
+
+Date: Sun Apr 12 05:28:53 2020
+Total elapsed time: 0.354 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2200
+traniter = 2188
+tranpoints = 1080
+accept = 1065
+rejected = 15
+matrix size = 16
+fillins = 0
+solver = Normal
+Thread vector: 46.0/39.5[2] 15.7/11.8[2] 3.2/9.8[1] 0.4/5.2[1]  2592/500
+Matrix Compiler1: 934 bytes object code size  1.9/0.7/[0.2]
+Matrix Compiler2: 1.61 KB object code size  0.6/0.8/[0.4]
+

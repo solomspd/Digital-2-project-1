@@ -1,0 +1,17 @@
+*** SPICE deck for cell NOR3_S1{sch} from library NOR3
+*** Created on Thu Apr 02, 2020 01:40:48
+*** Last revised on Sun Apr 05, 2020 23:35:07
+*** Written on Sun Apr 05, 2020 23:35:14 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: NOR3:NOR3_S1{sch}
+Mnmos@0 OUT IN_3 gnd gnd NMOS L=0.36U W=0.54U
+Mnmos@3 OUT IN_2 gnd gnd NMOS L=0.36U W=0.54U
+Mnmos@4 OUT IN_1 gnd gnd NMOS L=0.36U W=0.54U
+Mpmos@0 OUT IN_3 net@2 vdd PMOS L=0.36U W=3.96U
+Mpmos@1 net@3 IN_1 vdd vdd PMOS L=0.36U W=3.96U
+Mpmos@2 net@2 IN_2 net@3 vdd PMOS L=0.36U W=3.96U
+.END
