@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2020.3.31)  18 APR 2020 21:26
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Arch Linux) (preloaded format=xelatex 2020.3.31)  18 APR 2020 22:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -414,6 +414,12 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
 )
 \openout1 = `report.aux'.
 
@@ -449,19 +455,76 @@ Overfull \hbox (42.08148pt too wide) in paragraph at lines 255--256
 
 [6]
 PGFPlots: reading {./data/complex/size1/cin1.csv}
-PGFPlots: reading {./data/complex/size1/cinv2.csv}
- [7] [8] (/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.aux)
+PGFPlots: reading {./data/complex/size1/cin2.csv}
+
+
+Package pgfplots Warning: Table './data/complex/size1/cin2.csv' has an empty column name; replacing it by '1'' on input line 273.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {./data/complex/size1/cin4.csv}
+
+Package pgfplots Warning: Table './data/complex/size1/cin4.csv' has an empty column name; replacing it by '1'' on input line 275.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {./data/complex/size1/cin8.csv}
+
+Package pgfplots Warning: Table './data/complex/size1/cin8.csv' has an empty column name; replacing it by '1'' on input line 277.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {./data/complex/size2/cin1.csv}
+
+Package pgfplots Warning: Table './data/complex/size2/cin1.csv' has an empty column name; replacing it by '1'' on input line 291.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {./data/complex/size2/cin2.csv}
+
+Package pgfplots Warning: Table './data/complex/size2/cin2.csv' has an empty column name; replacing it by '1'' on input line 293.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {./data/complex/size2/cin4.csv}
+
+Package pgfplots Warning: Table './data/complex/size2/cin4.csv' has an empty column name; replacing it by '1'' on input line 295.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {./data/complex/size2/cin8.csv}
+
+Package pgfplots Warning: Table './data/complex/size2/cin8.csv' has an empty column name; replacing it by '1'' on input line 297.
+
+ [warning /pgfplots/warning/empty column name]
+[7]
+PGFPlots: reading {./data/complex/size4/cin1.csv}
+
+
+Package pgfplots Warning: Table './data/complex/size4/cin1.csv' has an empty column name; replacing it by '1'' on input line 311.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {./data/complex/size4/cin2.csv}
+
+Package pgfplots Warning: Table './data/complex/size4/cin2.csv' has an empty column name; replacing it by '1'' on input line 313.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {./data/complex/size4/cin4.csv}
+
+Package pgfplots Warning: Table './data/complex/size4/cin4.csv' has an empty column name; replacing it by '1'' on input line 315.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {./data/complex/size4/cin8.csv}
+
+Package pgfplots Warning: Table './data/complex/size4/cin8.csv' has an empty column name; replacing it by '1'' on input line 317.
+
+ [warning /pgfplots/warning/empty column name]
+[8] [9] (/data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 32513 strings out of 492483
- 902945 string characters out of 6134979
- 1217692 words of memory out of 5000000
- 36584 multiletter control sequences out of 15000+600000
+ 32593 strings out of 492483
+ 904943 string characters out of 6134979
+ 1223692 words of memory out of 5000000
+ 36656 multiletter control sequences out of 15000+600000
  7560 words of font info for 35 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,9n,103p,801b,1962s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,17n,103p,801b,2293s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.xdv (9 pages, 98272 bytes).
+Output written on /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.xdv (10 pages, 147836 bytes).

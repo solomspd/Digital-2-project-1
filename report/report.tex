@@ -261,15 +261,63 @@ cross/.default={10pt}}
 
 \subsection{Transition time}
 
+\subsubsection{Size 1}
+
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis} [ylabel=$T_{pdr}$,xlabel=$\mathrm{C}_{inv}$]
+		\begin{axis} [ylabel=$T_{pdr}/s$,xlabel=Transition$/ps$,legend pos=outer north east]
+		\addlegendentry{$\mathrm{C}_{inv}$}
 		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size1/cin1.csv};
-		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size1/cinv2.csv};
+		\addlegendentry{$2\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size1/cin2.csv};
+		\addlegendentry{$4\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size1/cin4.csv};
+		\addlegendentry{$8\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size1/cin8.csv};
 		\end{axis}
 	\end{tikzpicture}
-	\caption{$T_{pdr}$ to $\mathrm{C}_{inv}$}
+	\caption{}
+	\label{}
+\end{figure}
+
+\subsubsection{Size 2}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis} [ylabel=$T_{pdr}/s$,xlabel=Transition$/ps$,legend pos=outer north east]
+		\addlegendentry{$\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size2/cin1.csv};
+		\addlegendentry{$2\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size2/cin2.csv};
+		\addlegendentry{$4\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size2/cin4.csv};
+		\addlegendentry{$8\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size2/cin8.csv};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{}
+	\label{}
+\end{figure}
+
+\subsubsection{Size 4}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis} [ylabel=$T_{pdr}/s$,xlabel=Transition$/ps$,legend pos=outer north east]
+		\addlegendentry{$\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size4/cin1.csv};
+		\addlegendentry{$2\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size4/cin2.csv};
+		\addlegendentry{$4\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size4/cin4.csv};
+		\addlegendentry{$8\mathrm{C}_{inv}$}
+		\addplot table [x=Transition,y=tpdr,col sep = tab] {./data/complex/size4/cin8.csv};
+		\end{axis}
+	\end{tikzpicture}
+	\caption{}
 	\label{}
 \end{figure}
 

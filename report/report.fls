@@ -234,5 +234,15 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.toc
 INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size1/cin1.csv
-INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size1/cinv2.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size1/cin2.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size1/cin4.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size1/cin8.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size2/cin1.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size2/cin2.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size2/cin4.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size2/cin8.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size4/cin1.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size4/cin2.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size4/cin4.csv
+INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/./data/complex/size4/cin8.csv
 INPUT /data/Abdo/Abdo/Abdo's University work/spring 2020/Digital 2/Project1/Digital-2-project-1/report/report.aux
