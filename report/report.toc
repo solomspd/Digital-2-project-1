@@ -4,12 +4,15 @@
 \contentsline {subsection}{\numberline {2.2}Stick diagram}{3}% 
 \contentsline {subsection}{\numberline {2.3}Schematic}{3}% 
 \contentsline {section}{\numberline {3}Tri-state Inverter}{3}% 
-\contentsline {section}{\numberline {4}3 input NAND}{3}% 
-\contentsline {section}{\numberline {5}3 input NOR}{3}% 
-\contentsline {section}{\numberline {6}Complex function}{4}% 
-\contentsline {subsection}{\numberline {6.1}Schematic}{4}% 
-\contentsline {subsection}{\numberline {6.2}Stick diagram}{5}% 
-\contentsline {subsection}{\numberline {6.3}Layout}{6}% 
-\contentsline {subsection}{\numberline {6.4}Transition time}{6}% 
-\contentsline {subsection}{\numberline {6.5}Data collection}{6}% 
-\contentsline {subsection}{\numberline {6.6}Minimum cell height}{6}% 
+\contentsline {subsection}{\numberline {3.1}Schematic}{3}% 
+\contentsline {section}{\numberline {4}3 input NAND}{4}% 
+\contentsline {subsection}{\numberline {4.1}Schematic}{4}% 
+\contentsline {section}{\numberline {5}3 input NOR}{5}% 
+\contentsline {subsection}{\numberline {5.1}Schematic}{5}% 
+\contentsline {section}{\numberline {6}Complex function}{6}% 
+\contentsline {subsection}{\numberline {6.1}Schematic}{6}% 
+\contentsline {subsection}{\numberline {6.2}Stick diagram}{7}% 
+\contentsline {subsection}{\numberline {6.3}Layout}{7}% 
+\contentsline {subsection}{\numberline {6.4}Transition time}{7}% 
+\contentsline {subsection}{\numberline {6.5}Data collection}{7}% 
+\contentsline {subsection}{\numberline {6.6}Minimum cell height}{7}% 
